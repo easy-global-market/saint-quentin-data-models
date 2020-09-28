@@ -34,16 +34,18 @@
     "length": {
         "type": "Property",
         "value": "90",
-        "unitCode":"MTR"
+        "unitCode": "MTR"
     },
     "width": {
         "type": "Property",
         "value": "45",
-        "unitCode":"MTR"
+        "unitCode": "MTR"
     },
     "refStadium": {
         "type": "Relationship",
         "object": "urn:ngsi-ld:Stadium:01"
     },
-    "@context": []
+    "@context": [
+        "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/SmartIrrigation/jsonld-contexts/smartIrrigation-compound.jsonld?token=AL5LEUQ4K76LKNIJZNLUHUK7OICPC"
+    ]
 }
