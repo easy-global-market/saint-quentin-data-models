@@ -1,0 +1,1 @@
+# Connected Canteens data models
