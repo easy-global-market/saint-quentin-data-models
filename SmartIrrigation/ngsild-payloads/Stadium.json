@@ -1,0 +1,43 @@
+{
+    "id": "urn:ngsi-ld:Stadium:01",
+    "type": "Stadium",
+    "name": {
+        "type": "Property",
+        "value": "Paul Debresie"
+    },
+    "description": {
+        "type": "Property",
+        "value": "Free Text"
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                3.280285,
+                49.866148
+            ]
+        }
+    },
+    "telephone": {
+        "type": "Property",
+        "value": "0323083029"
+    },
+    "url": {
+        "type": "Property",
+        "value": "http://www.info-stades.fr/stade/839/saint-quentin-stade-paul-debresie"
+    },
+    "refCity": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:City:01"
+    },
+    "refField": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:City:01"
+    },
+    "hasWateringController": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:City:01"
+    },
+    "@context": []
+}
