@@ -1,5 +1,5 @@
 {
-    "id": "urn:ngsi-ld:Valve:15A",
+    "id": "urn:ngsi-ld:Valve:15B",
     "type": "Valve",
     "connectsTo": {
         "type": "Relationship",
