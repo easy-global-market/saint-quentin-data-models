@@ -1,0 +1,21 @@
+{
+    "@context": {
+        "City": "https://schema.org/City",
+        "Field": "https://github.com/GSMADeveloper/NGSI-LD-Entities/blob/master/definitions/Agri-Parcel.md",
+        "Stadium": "https://schema.org/StadiumOrArena",
+        
+        "address": "https://schema.org/address",
+        "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
+        "cropStatus": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/cropstatus",
+        "hasWateringController": "https://ngsi-ld.iotbooster.fr/hasWateringController",
+        "lastPlantedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastplantedat",
+        "length": "https://schema.org/length",
+        "logo": "https://schema.org/logo",
+        "url": "https://schema.org/url",
+        "refField": "https://ngsi-ld.iotbooster.fr/refField",
+        "refStadium": "https://ngsi-ld.iotbooster.fr/refStadium",
+        "refCity": "https://ngsi-ld.iotbooster.fr/refStadium",
+        "telephone": "https://schema.org/telephone",
+        "width": "https://schema.org/width"
+    }
+}

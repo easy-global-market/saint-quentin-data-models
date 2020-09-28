@@ -1,0 +1,49 @@
+{
+    "id": "urn:ngsi-ld:Field:01",
+    "type": "Field",
+    "name": {
+        "type": "Property",
+        "value": "A"
+    },
+    "description": {
+        "type": "Property",
+        "value": "Free Text"
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                3.280285,
+                49.866148
+            ]
+        }
+    },
+    "category": {
+        "type": "Property",
+        "value": "Saint-Quentin"
+    },
+    "cropStatus": {
+        "type": "Property",
+        "value": "Saint-Quentin"
+    },
+    "lastPlantedAt": {
+        "type": "Property",
+        "value": "Saint-Quentin"
+    },
+    "length": {
+        "type": "Property",
+        "value": "90",
+        "unitCode":"MTR"
+    },
+    "width": {
+        "type": "Property",
+        "value": "45",
+        "unitCode":"MTR"
+    },
+    "refStadium": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Stadium:01"
+    },
+    "@context": []
+}
