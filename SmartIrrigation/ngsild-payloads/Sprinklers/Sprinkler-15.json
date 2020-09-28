@@ -1,0 +1,15 @@
+{
+    "id": "urn:ngsi-ld:Sprinklers:15",
+    "type": "Sprinkler",
+    "refValve": [
+        {
+            "type": "Relationship",
+            "object": ""
+        }
+    ],
+    "refField": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Field:01"
+    },
+    "@context": []
+}
