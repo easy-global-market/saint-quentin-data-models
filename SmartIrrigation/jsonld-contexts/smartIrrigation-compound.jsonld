@@ -1,0 +1,6 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/SmartIrrigation/jsonld-contexts/smartIrrigation.jsonld?token=AL5LEUTWDRVJRLGYINSJIL27OHYQ6",
+        "http://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+    ]
+}

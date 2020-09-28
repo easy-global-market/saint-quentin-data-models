@@ -21,7 +21,7 @@
     },
     "category": {
         "type": "Property",
-        "value": "Saint-Quentin"
+        "value": "football"
     },
     "cropStatus": {
         "type": "Property",
@@ -29,7 +29,7 @@
     },
     "lastPlantedAt": {
         "type": "Property",
-        "value": "Saint-Quentin"
+        "value": "2020-06-26T21:32:52+02:00"
     },
     "length": {
         "type": "Property",
