@@ -33,11 +33,7 @@
     },
     "refField": {
         "type": "Relationship",
-        "object": "urn:ngsi-ld:City:01"
-    },
-    "hasWateringController": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:City:01"
+        "object": "urn:ngsi-ld:Field:01"
     },
     "@context": []
 }
