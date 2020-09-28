@@ -1,0 +1,31 @@
+{
+    "id": "urn:ngsi-ld:Sprinklers:15",
+    "type": "Sprinkler",
+    "refValve": [
+        {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Valve:15A",
+            "datasetId": "urn:ngsi-ld:Dataset:Valve:15A"
+        },
+        {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Valve:15B",
+            "datasetId": "urn:ngsi-ld:Dataset:Valve:15B"
+        },
+        {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Valve:15C",
+            "datasetId": "urn:ngsi-ld:Dataset:Valve:15C"
+        },
+        {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Valve:15D",
+            "datasetId": "urn:ngsi-ld:Dataset:Valve:15D"
+        }
+    ],
+    "refField": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Field:01"
+    },
+    "@context": []
+}

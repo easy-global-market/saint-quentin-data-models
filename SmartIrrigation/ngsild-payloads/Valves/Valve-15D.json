@@ -1,0 +1,9 @@
+{
+    "id": "urn:ngsi-ld:Valve:15D",
+    "type": "Valve",
+    "connectsTo": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Sprinklers:15"
+    },
+    "@context": []
+}
