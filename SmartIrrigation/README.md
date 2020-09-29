@@ -2,7 +2,7 @@
 
 ## Description
 This repository contains an harmonised NGSI-LD description of the Smart Irrigation data Model. The main NGSI-LD entities of this data are:
--   [City](/ngsild-payloads/City.json)
+-   [City](../ngsild-payloads/City.json)
 
 -   [Stadium](/ngsild-payloads/Stadium.json)
 
