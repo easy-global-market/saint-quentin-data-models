@@ -1,5 +1,5 @@
 {
-    "id": "urnngsi-ldActuatorLawnMowerModel",
+    "id": "urn:ngsi-ld:Device:SoilSensor01",
     "type": "DeviceModel",
     "category ": {
         "type": "Property",
