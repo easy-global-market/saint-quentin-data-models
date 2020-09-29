@@ -1,10 +1,6 @@
 {
-    "id": "urn:ngsi-ld:Device:Sprinklers:01",
-    "type": "Device",
-    "refDeviceModel ": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld::deviceModel:SprinklerModel01"
-    },
+    "id": "urnngsi-ldActuatorLawnMowerModel",
+    "type": "Actuator",
     "commands": {
         "type": "Property",
         "value": [
@@ -44,30 +40,6 @@
         "value": [
             "false"
         ]
-    },
-    "refValve": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:Valve:01"
-    },
-    "refField": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:Field:01"
-    },
-    "flow": {
-        "type": "Property",
-        "value": ""
-    },
-    "startAngle": {
-        "type": "Property",
-        "value": ""
-    },
-    "endAngle": {
-        "type": "Property",
-        "value": ""
-    },
-    "radius": {
-        "type": "Property",
-        "value": "90"
     },
     "@context": [
         "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/SmartIrrigation/jsonld-contexts/smartIrrigation-compound.jsonld?token=AL5LEUQ4K76LKNIJZNLUHUK7OICPC"

@@ -1,21 +1,21 @@
 {
     "@context": {
-        "City": "https://schema.org/City",
-        "Field": "https://github.com/GSMADeveloper/NGSI-LD-Entities/blob/master/definitions/Agri-Parcel.md",
-        "Stadium": "https://schema.org/StadiumOrArena",
+        "City": "https://www.saint-quentin.fr/ontology#City",
+        "Field": "https://www.saint-quentin.fr/ontology#Agri-Parcel",
+        "Stadium": "https://www.saint-quentin.fr/ontology#Stadium",
         
-        "address": "https://schema.org/address",
-        "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
-        "cropStatus": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/cropstatus",
-        "hasWateringController": "https://ngsi-ld.iotbooster.fr/hasWateringController",
-        "lastPlantedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastplantedat",
-        "length": "https://schema.org/length",
-        "logo": "https://schema.org/logo",
-        "url": "https://schema.org/url",
-        "refField": "https://ngsi-ld.iotbooster.fr/refField",
-        "refStadium": "https://ngsi-ld.iotbooster.fr/refStadium",
-        "refCity": "https://ngsi-ld.iotbooster.fr/refStadium",
-        "telephone": "https://schema.org/telephone",
-        "width": "https://schema.org/width"
+        "address": "https://www.saint-quentin.fr/ontology#address",
+        "category": "https://www.saint-quentin.fr/ontology#category",
+        "status": "https://www.saint-quentin.fr/ontology#cropstatus",
+        "hasWateringController": "https://www.saint-quentin.fr/ontology#hasWateringController",
+        "lastPlantedAt": "https://www.saint-quentin.fr/ontology#lastplantedat",
+        "length": "https://www.saint-quentin.fr/ontology#length",
+        "logo": "https://www.saint-quentin.fr/ontology#logo",
+        "url": "https://www.saint-quentin.fr/ontology#url",
+        "refField": "https://www.saint-quentin.fr/ontology#refField",
+        "refStadium": "https://www.saint-quentin.fr/ontology#refStadium",
+        "refCity": "https://www.saint-quentin.fr/ontology#refStadium",
+        "telephone": "https://www.saint-quentin.fr/ontology#telephone",
+        "width": "https://www.saint-quentin.fr/ontology#width"
     }
 }

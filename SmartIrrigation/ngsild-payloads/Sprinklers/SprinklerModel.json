@@ -1,0 +1,11 @@
+{
+    "id": "urn:ngsi-ld::deviceModel:SprinklerModel01",
+    "type": "deviceModel",
+    "category ": {
+        "type": "Property",
+        "value": "Actuator"
+    },
+    "@context": [
+        "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/SmartIrrigation/jsonld-contexts/smartIrrigation-compound.jsonld?token=AL5LEUQ4K76LKNIJZNLUHUK7OICPC"
+    ]
+}
