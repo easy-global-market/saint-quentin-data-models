@@ -1,6 +1,6 @@
 {
     "id": "urnngsi-ldActuatorLawnMowerModel",
-    "type": "Actuator",
+    "type": "Device",
     "commands": {
         "type": "Property",
         "value": [

@@ -1,6 +1,6 @@
 {
     "id": "urn:ngsi-ld:Sprinklers:15",
-    "type": "Sprinkler",
+    "type": "Device",
     "refValve": [
         {
             "type": "Relationship",
