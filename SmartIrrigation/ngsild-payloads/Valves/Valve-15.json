@@ -1,0 +1,29 @@
+{
+    "id": "urn:ngsi-ld:Valve:01",
+    "type": "Valve",
+    "refSprinkler": [
+        {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Sprinkler:15a",
+            "datasetId": "urn:ngsi-ld:Dataset:Sprinkler:15A"
+        },
+        {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Sprinkler:15b",
+            "datasetId": "urn:ngsi-ld:Dataset:Sprinkler:15b"
+        },
+        {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Sprinkler:15c",
+            "datasetId": "urn:ngsi-ld:Dataset:Sprinkler:15c"
+        },
+        {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Sprinkler:15d",
+            "datasetId": "urn:ngsi-ld:Dataset:Sprinkler:15d"
+        }
+    ],
+    "@context": [
+        "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/SmartIrrigation/jsonld-contexts/smartIrrigation-compound.jsonld?token=AL5LEUQ4K76LKNIJZNLUHUK7OICPC"
+    ]
+}

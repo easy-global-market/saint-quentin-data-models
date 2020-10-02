@@ -1,9 +1,9 @@
 {
-    "id": "urn:ngsi-ld:Valve:15B",
+    "id": "urn:ngsi-ld:Valve:01",
     "type": "Valve",
-    "connectsTo": {
+    "refSprinkler": {
         "type": "Relationship",
-        "object": "urn:ngsi-ld:Sprinklers:15"
+        "object": "urn:ngsi-ld:Sprinklers:14"
     },
     "@context": [
         "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/SmartIrrigation/jsonld-contexts/smartIrrigation-compound.jsonld?token=AL5LEUQ4K76LKNIJZNLUHUK7OICPC"
