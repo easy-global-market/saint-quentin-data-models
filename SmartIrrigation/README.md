@@ -10,6 +10,7 @@ This repository contains an harmonised NGSI-LD description of the Smart Irrigati
 	- [Sprinkler Devices](ngsild-payloads/SprinklerDevices)
 	- [Soil Devices](ngsild-payloads/SoilDevices)
 	- [LawnMower Devices](ngsild-payloads/LawnMowerDevices)
+	- [NodeController Devices](ngsild-payloads/NodeController)
 
 -   [Valve](ngsild-payloads//Valves)
 
