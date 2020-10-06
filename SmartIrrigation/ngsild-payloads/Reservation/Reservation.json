@@ -7,21 +7,21 @@
     },
     "refField": {
         "type": "Relationship",
-        "object": "urn:ngsi-ld:Field:stade01"
+        "object": "urn:ngsi-ld:Field:01"
     },
     "equipmentType": {
         "type": "Property",
         "value": "Terrain en Herbe"
     },
-    "reserver": {
+    "reserverName": {
         "type": "Property",
         "value": "OLYMPIQUE SAINT-QUENTINOIS"
     },
-    "startsAt": {
+    "startedAt": {
         "type": "Property",
         "value": "2020-03-29T14:00:00+02:00"
     },
-    "endsAt": {
+    "endedAt": {
         "type": "Property",
         "value": "2020-03-29T17:00:00+02:00"
     },
