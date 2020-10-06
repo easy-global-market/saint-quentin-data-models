@@ -13,15 +13,15 @@
         "type": "Property",
         "value": "Terrain en Herbe"
     },
-    "reserverName": {
+    "booker": {
         "type": "Property",
         "value": "OLYMPIQUE SAINT-QUENTINOIS"
     },
-    "startedAt": {
+    "startAt": {
         "type": "Property",
         "value": "2020-03-29T14:00:00+02:00"
     },
-    "endedAt": {
+    "endAt": {
         "type": "Property",
         "value": "2020-03-29T17:00:00+02:00"
     },
@@ -33,9 +33,10 @@
         "type": "Property",
         "value": "Competitions"
     },
-    "hours": {
+    "duration": {
         "type": "Property",
-        "value": 3
+        "value": 3,
+        "unitCode": "HUR"
     },
     "@context": [
         "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/SmartIrrigation/jsonld-contexts/smartIrrigation-compound.jsonld?token=AL5LEUQ4K76LKNIJZNLUHUK7OICPC"
