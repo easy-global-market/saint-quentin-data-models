@@ -1,0 +1,43 @@
+{
+    "id": "urn:ngsi-ld:Reservation:01",
+    "type": "Reservation",
+    "refStadium": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Stadium:01"
+    },
+    "refField": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Field:stade01"
+    },
+    "equipmentType": {
+        "type": "Property",
+        "value": "Terrain en Herbe"
+    },
+    "reserver": {
+        "type": "Property",
+        "value": "OLYMPIQUE SAINT-QUENTINOIS"
+    },
+    "startsAt": {
+        "type": "Property",
+        "value": "2020-03-29T14:00:00+02:00"
+    },
+    "endsAt": {
+        "type": "Property",
+        "value": "2020-03-29T17:00:00+02:00"
+    },
+    "activity": {
+        "type": "Property",
+        "value": "Football"
+    },
+    "reservationType": {
+        "type": "Property",
+        "value": "Competitions"
+    },
+    "hours": {
+        "type": "Property",
+        "value": 3
+    },
+    "@context": [
+        "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/SmartIrrigation/jsonld-contexts/smartIrrigation-compound.jsonld?token=AL5LEUQ4K76LKNIJZNLUHUK7OICPC"
+    ]
+}
