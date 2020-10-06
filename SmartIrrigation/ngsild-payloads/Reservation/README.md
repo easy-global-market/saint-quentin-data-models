@@ -7,9 +7,9 @@ The table below details the NGSI-LD mapping process:
 | Nom de l'équipement Père                 | Relationship           | refStadium             |
 | Nom de l'équipement de la réservation    | Relationship           | refField               |
 | Type de lieu                             | Property               | equipmentType          |
-| Nom usager                               | Property               | reserverName           |
-| Date de début,Mois,Année,Heure de début  | Temporal Property      | startedAt              |
-| Date de début, Mois, Année, Heure de fin | Temporal Property      | endedAt                |
+| Nom usager                               | Property               | booker                 |
+| Date de début,Mois,Année,Heure de début  | Temporal Property      | startAt                |
+| Date de début, Mois, Année, Heure de fin | Temporal Property      | endAt                  |
 | Activité                                 | Property               | activity               |
 | Type de résservation                     | Property               | reservationType        |
-| ENTIER                                   | Property               | hours                  |
+| ENTIER                                   | Property               | duration               |
