@@ -1,0 +1,71 @@
+{
+    "id": "urn:ngsi-ld:Menu:01",
+    "type": "Menu",
+    "servedAt": {
+        "type": "DateTime",
+        "value": "2020-06-30T11:00:00Z"
+    },
+    "refCity": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:City:01"
+    },
+    "vegetarian": {
+        "type": "Property",
+        "value": "false"
+    },
+    "appetizers": {
+        "type": "Property",
+        "value": "Duo de chou bio à l'Irlandaise",
+        "isOrganic": {
+            "type": "Property",
+            "value": "true"
+        },
+        "containsPork": {
+            "type": "Property",
+            "value": "true"
+        }
+    },
+    "meat": {
+        "type": "Property",
+        "value": "Filet de poulet à la moutarde",
+        "isOrganic": {
+            "type": "Property",
+            "value": "false"
+        },
+        "containsPork": {
+            "type": "Property",
+            "value": "false"
+        }
+    },
+    "vegetables": {
+        "type": "Property",
+        "value": "Salsifis au gratin",
+        "isOrganic": {
+            "type": "Property",
+            "value": "false"
+        }
+    },
+    "dairyProduct": {
+        "type": "Property",
+        "value": "Tomme noire ou Coulommiers",
+        "isOrganic": {
+            "type": "Property",
+            "value": "false"
+        }
+    },
+    "dessert": {
+        "type": "Property",
+        "value": "Mousse au chocolat ou Crème dessert praliné",
+        "isOrganic": {
+            "type": "Property",
+            "value": "false"
+        },
+        "containsPork": {
+            "type": "Property",
+            "value": "false"
+        }
+    },
+    "@context": [
+        "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/SmartIrrigation/jsonld-contexts/smartIrrigation-compound.jsonld?token=AL5LEUQ4K76LKNIJZNLUHUK7OICPC"
+    ]
+}
