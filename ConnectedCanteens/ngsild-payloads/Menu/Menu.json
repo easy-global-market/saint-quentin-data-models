@@ -1,8 +1,8 @@
 {
     "id": "urn:ngsi-ld:Menu:01",
     "type": "Menu",
-    "servedAt": {
-        "type": "DateTime",
+    "servedOn": {
+        "type": "Date",
         "value": "2020-06-30T11:00:00Z"
     },
     "refCity": {
