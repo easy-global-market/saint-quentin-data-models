@@ -1,0 +1,60 @@
+{
+    "id": "urn:ngsi-ld:Attendance:01",
+    "type": "Attendance",
+    "checkedOn": {
+        "type": "Date",
+        "value": "2020-06-30T11:00:00Z"
+    },
+    "refRestaurant": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Restaurant:01"
+    },
+    "registred": [
+        {
+            "type": "Property",
+            "value": 50,
+            "observedAt": "2020-06-30T11:00:00Z",
+            "visitors": {
+                "type": "Property",
+                "value": "Maternelle"
+            },
+            "datasetId": "urn:ngsi-ld:Dataset:Maternelle"
+        },
+        {
+            "type": "Property",
+            "value": 50,
+            "observedAt": "2020-06-30T11:00:00Z",
+            "visitors": {
+                "type": "Property",
+                "value": 10,
+                "unitCode": "Ecoliers"
+            },
+            "datasetId": "urn:ngsi-ld:Dataset:Ecoliers"
+        }
+    ],
+    "arrived": [
+        {
+            "type": "Property",
+            "value": 40,
+            "observedAt": "2020-06-30T11:00:00Z",
+            "visitors": {
+                "type": "Property",
+                "value": "Maternelle"
+            },
+            "datasetId": "urn:ngsi-ld:Dataset:Maternelle"
+        },
+        {
+            "type": "Property",
+            "value": 30,
+            "observedAt": "2020-06-30T11:00:00Z",
+            "visitors": {
+                "type": "Property",
+                "value": "Ecoliers"
+            },
+            "datasetId": "urn:ngsi-ld:Dataset:Ecoliers"
+        }
+    ],
+    "@context": [
+        "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/SmartIrrigation/jsonld-contexts/smartIrrigation-compound.jsonld?token=AL5LEUQ4K76LKNIJZNLUHUK7OICPC"
+    ]
+}
