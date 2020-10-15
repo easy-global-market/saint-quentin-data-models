@@ -14,7 +14,7 @@
             "type": "Property",
             "value": 50,
             "observedAt": "2020-06-30T11:00:00Z",
-            "visitors": {
+            "pubilc": {
                 "type": "Property",
                 "value": "Maternelle"
             },
@@ -24,10 +24,9 @@
             "type": "Property",
             "value": 50,
             "observedAt": "2020-06-30T11:00:00Z",
-            "visitors": {
+            "pubilc": {
                 "type": "Property",
-                "value": 10,
-                "unitCode": "Ecoliers"
+                "value": "Ecoliers"
             },
             "datasetId": "urn:ngsi-ld:Dataset:Ecoliers"
         }
@@ -37,7 +36,7 @@
             "type": "Property",
             "value": 40,
             "observedAt": "2020-06-30T11:00:00Z",
-            "visitors": {
+            "pubilc": {
                 "type": "Property",
                 "value": "Maternelle"
             },
@@ -47,11 +46,11 @@
             "type": "Property",
             "value": 30,
             "observedAt": "2020-06-30T11:00:00Z",
-            "visitors": {
+            "public": {
                 "type": "Property",
                 "value": "Ecoliers"
             },
-            "datasetId": "urn:ngsi-ld:Dataset:Ecoliers"
+            "datasetId": "urn:ngsi-ld:Dataset:Primaire"
         }
     ],
     "@context": [
