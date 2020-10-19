@@ -7,14 +7,14 @@
     },
     "checkedOn": {
         "type": "Date",
-        "value": "2020-06-30T11:00:00Z"
+        "value": "2020-06-30"
     },
     "registered": [
         {
             "type": "Property",
             "value": 50,
             "observedAt": "2020-06-30T14:00:00Z",
-            "pubilc": {
+            "audiance": {
                 "type": "Property",
                 "value": "Maternelles"
             },
@@ -24,7 +24,7 @@
             "type": "Property",
             "value": 50,
             "observedAt": "2020-06-30T14:00:00Z",
-            "pubilc": {
+            "audiance": {
                 "type": "Property",
                 "value": "Primaires"
             },
