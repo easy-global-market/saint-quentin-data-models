@@ -1,34 +1,34 @@
 {
     "id": "urn:ngsi-ld:Attendance:01",
     "type": "Attendance",
-    "checkedOn": {
-        "type": "Date",
-        "value": "2020-06-30T11:00:00Z"
-    },
     "refRestaurant": {
         "type": "Relationship",
         "object": "urn:ngsi-ld:Restaurant:01"
     },
-    "registred": [
+    "checkedOn": {
+        "type": "Date",
+        "value": "2020-06-30T11:00:00Z"
+    },
+    "registered": [
         {
             "type": "Property",
             "value": 50,
-            "observedAt": "2020-06-30T11:00:00Z",
+            "observedAt": "2020-06-30T14:00:00Z",
             "pubilc": {
                 "type": "Property",
-                "value": "Maternelle"
+                "value": "Maternelles"
             },
-            "datasetId": "urn:ngsi-ld:Dataset:Maternelle"
+            "datasetId": "urn:ngsi-ld:Dataset:Maternelles"
         },
         {
             "type": "Property",
             "value": 50,
-            "observedAt": "2020-06-30T11:00:00Z",
+            "observedAt": "2020-06-30T14:00:00Z",
             "pubilc": {
                 "type": "Property",
-                "value": "Ecoliers"
+                "value": "Primaires"
             },
-            "datasetId": "urn:ngsi-ld:Dataset:Ecoliers"
+            "datasetId": "urn:ngsi-ld:Dataset:Primaires"
         }
     ],
     "arrived": [
@@ -38,9 +38,9 @@
             "observedAt": "2020-06-30T11:00:00Z",
             "pubilc": {
                 "type": "Property",
-                "value": "Maternelle"
+                "value": "Maternelles"
             },
-            "datasetId": "urn:ngsi-ld:Dataset:Maternelle"
+            "datasetId": "urn:ngsi-ld:Dataset:Maternelles"
         },
         {
             "type": "Property",
