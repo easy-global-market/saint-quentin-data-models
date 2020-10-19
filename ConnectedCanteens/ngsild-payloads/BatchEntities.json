@@ -1,0 +1,79 @@
+{{
+    "id": "urn:ngsi-ld:Restaurant:01",
+    "type": "Restaurant",
+    "name": {
+        "type": "Property",
+        "value": "Francois Collery"
+    },
+    "refCity": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:City:01"
+    },
+    "refAttendance": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Attendance:01"
+    },
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+    ]
+},
+{
+    "id": "urn:ngsi-ld:Attendance:01",
+    "type": "Attendance",
+    "refRestaurant": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Restaurant:01"
+    },
+    "checkedOn": {
+        "type": "Date",
+        "value": "2020-06-30"
+    },
+    "registered": [
+        {
+            "type": "Property",
+            "value": 50,
+            "observedAt": "2020-06-30T14:00:00Z",
+            "audiance": {
+                "type": "Property",
+                "value": "Maternelles"
+            },
+            "datasetId": "urn:ngsi-ld:Dataset:Maternelles"
+        },
+        {
+            "type": "Property",
+            "value": 50,
+            "observedAt": "2020-06-30T14:00:00Z",
+            "audiance": {
+                "type": "Property",
+                "value": "Primaires"
+            },
+            "datasetId": "urn:ngsi-ld:Dataset:Primaires"
+        }
+    ],
+    "arrived": [
+        {
+            "type": "Property",
+            "value": 40,
+            "observedAt": "2020-06-30T11:00:00Z",
+            "pubilc": {
+                "type": "Property",
+                "value": "Maternelles"
+            },
+            "datasetId": "urn:ngsi-ld:Dataset:Maternelles"
+        },
+        {
+            "type": "Property",
+            "value": 30,
+            "observedAt": "2020-06-30T11:00:00Z",
+            "public": {
+                "type": "Property",
+                "value": "Ecoliers"
+            },
+            "datasetId": "urn:ngsi-ld:Dataset:Primaire"
+        }
+    ],
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+    ]
+}
+}
