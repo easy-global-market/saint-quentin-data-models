@@ -9,48 +9,71 @@
         "type": "Date",
         "value": "2020-06-30"
     },
-    "registered": [
+    "counted": {
+        "type": "Property",
+        "value": 51,
+        "observedAt": "2020-06-30T14:30:00Z",
+        "observedBy": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Device:01"
+        }
+    },
+    "countedByCategory": [
         {
             "type": "Property",
             "value": 50,
             "observedAt": "2020-06-30T14:00:00Z",
-            "audiance": {
+            "audience": {
                 "type": "Property",
                 "value": "Maternelles"
             },
-            "datasetId": "urn:ngsi-ld:Dataset:Maternelles"
+            "state": {
+                "type": "Property",
+                "value": "Registered"
+            },
+            "datasetId": "urn:ngsi-ld:Dataset:Registered:Maternelles"
         },
         {
             "type": "Property",
             "value": 50,
             "observedAt": "2020-06-30T14:00:00Z",
-            "audiance": {
+            "audience": {
+                "type": "Property",
+                "value": "Maternelles"
+            },
+            "state": {
+                "type": "Property",
+                "value": "Actual"
+            },
+            "datasetId": "urn:ngsi-ld:Dataset:Actual:Maternelles"
+        },
+        {
+            "type": "Property",
+            "value": 50,
+            "observedAt": "2020-06-30T14:00:00Z",
+            "audience": {
                 "type": "Property",
                 "value": "Primaires"
             },
-            "datasetId": "urn:ngsi-ld:Dataset:Primaires"
-        }
-    ],
-    "arrived": [
-        {
-            "type": "Property",
-            "value": 40,
-            "observedAt": "2020-06-30T11:00:00Z",
-            "pubilc": {
+            "state": {
                 "type": "Property",
-                "value": "Maternelles"
+                "value": "Registered"
             },
-            "datasetId": "urn:ngsi-ld:Dataset:Maternelles"
+            "datasetId": "urn:ngsi-ld:Dataset:Primaires:Maternelles"
         },
         {
             "type": "Property",
-            "value": 30,
-            "observedAt": "2020-06-30T11:00:00Z",
-            "public": {
+            "value": 50,
+            "observedAt": "2020-06-30T14:00:00Z",
+            "audience": {
                 "type": "Property",
-                "value": "Ecoliers"
+                "value": "Primaires"
             },
-            "datasetId": "urn:ngsi-ld:Dataset:Primaire"
+            "state(?)": {
+                "type": "Property",
+                "value": "Actual"
+            },
+            "datasetId": "urn:ngsi-ld:Dataset:Primaires:Maternelles"
         }
     ],
     "@context": [
