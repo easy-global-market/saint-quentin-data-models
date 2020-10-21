@@ -1,0 +1,40 @@
+{
+    "id": "urn:ngsi-ld:City:01",
+    "type": "City",
+    "name": {
+        "type": "Property",
+        "value": "Saint-Quentin"
+    },
+    "description": {
+        "type": "Property",
+        "value": "Free Text"
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                3.2876,
+                49.8489
+            ]
+        }
+    },
+    "url": {
+        "type": "Property",
+        "value": "https://www.saint-quentin.fr/"
+    },
+    "logo": {
+        "type": "Property",
+        "value": "https://www.saint-quentin.fr/uploads/Image/e4/SIT_STQUENTIN_111_SIT_STQUENTIN_089_stq_logo.png"
+    },
+    "hasStadium": [
+        {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Stadium:01",
+            "datasetId": "urn:ngsi-ld:Dataset:Stadium:1"
+        }
+    ],
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+    ]
+}

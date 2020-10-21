@@ -1,0 +1,19 @@
+{
+    "id": "urn:ngsi-ld:Restaurant:01",
+    "type": "Restaurant",
+    "name": {
+        "type": "Property",
+        "value": "Francois Collery"
+    },
+    "refCity": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:City:01"
+    },
+    "refAttendance": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Attendance:01"
+    },
+    "@context": [
+        "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/SmartIrrigation/jsonld-contexts/smartIrrigation-compound.jsonld?token=AL5LEUQ4K76LKNIJZNLUHUK7OICPC"
+    ]
+}
