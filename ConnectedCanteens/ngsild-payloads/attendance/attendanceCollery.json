@@ -73,7 +73,7 @@
                 "type": "Property",
                 "value": "Actual"
             },
-            "datasetId": "urn:ngsi-ld:Dataset:Primaires:Maternelles"
+            "datasetId": "urn:ngsi-ld:Dataset:Actual:Primaires"
         }
     ],
     "@context": [
