@@ -59,7 +59,7 @@
                 "type": "Property",
                 "value": "Registered"
             },
-            "datasetId": "urn:ngsi-ld:Dataset:Primaires:Maternelles"
+            "datasetId": "urn:ngsi-ld:Dataset:Registered:Primaires"
         },
         {
             "type": "Property",
