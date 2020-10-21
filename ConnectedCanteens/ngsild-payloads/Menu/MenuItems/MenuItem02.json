@@ -1,0 +1,27 @@
+{
+    "id": "urn:ngsi-ld:MenuItem:02",
+    "type": "MenuItem",
+    "name": {
+        "type": "Property",
+        "value": "filet de poulet à la moutarde"
+    },
+    "kind": {
+        "type": "Property",
+        "value": "meat"
+    },
+    "isVegetarian": {
+        "type": "Property",
+        "value": "false"
+    },
+    "isOrganic": {
+        "type": "Property",
+        "value": "false"
+    },
+    "containsPork": {
+        "type": "Property",
+        "value": "false"
+    },
+    "@context": [
+        "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/SmartIrrigation/jsonld-contexts/smartIrrigation-compound.jsonld?token=AL5LEUQ4K76LKNIJZNLUHUK7OICPC"
+    ]
+}
