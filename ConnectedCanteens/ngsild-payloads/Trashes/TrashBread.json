@@ -1,0 +1,25 @@
+{
+    "id": "urn:ngsi-ld:Trash:bread",
+    "type": "Trash",
+    "refRestaurant": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Restaurant:01"
+    },
+    "trashType": {
+        "type": "Property",
+        "value": "bread"
+    },
+    "weight": {
+        "type": "Property",
+        "value": 51,
+        "unitCode": "GRM",
+        "observedAt": "2020-06-30T14:30:00Z",
+        "observedBy": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Device:02"
+        }
+    },
+    "@context": [
+        "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/SmartIrrigation/jsonld-contexts/smartIrrigation-compound.jsonld?token=AL5LEUQ4K76LKNIJZNLUHUK7OICPC"
+    ]
+}

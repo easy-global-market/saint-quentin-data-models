@@ -1,0 +1,31 @@
+{
+    "id": "urn:ngsi-ld:Device:04",
+    "type": "Device",
+    "refDeviceModel": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:DeviceModel:01"
+    },
+    "controlledAsset": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Trash:vegetable"
+    },
+    "dateInstalled": {
+        "type": "DateTime",
+        "value": "2020-06-30T14:00:00Z"
+    },
+    "dateFirstUsed": {
+        "type": "DateTime",
+        "value": "2020-06-30T14:00:00Z"
+    },
+    "dateLastValueReported": {
+        "type": "DateTime",
+        "value": "2020-06-30T14:00:00Z"
+    },
+    "controlledProperty": {
+        "type": "Property",
+        "value": "weight"
+    },
+    "@context": [
+        "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/SmartIrrigation/jsonld-contexts/smartIrrigation-compound.jsonld?token=AL5LEUQ4K76LKNIJZNLUHUK7OICPC"
+    ]
+}
