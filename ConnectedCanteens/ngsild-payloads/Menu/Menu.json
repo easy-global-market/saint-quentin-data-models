@@ -2,8 +2,11 @@
     "id": "urn:ngsi-ld:Menu:01",
     "type": "Menu",
     "servedOn": {
-        "type": "Date",
-        "value": "2020-06-30"
+        "type": "Property",
+        "value": {
+            "@type": "Date",
+            "@value": "2020-06-30"
+        }
     },
     "hasMenuItem": [
         {
