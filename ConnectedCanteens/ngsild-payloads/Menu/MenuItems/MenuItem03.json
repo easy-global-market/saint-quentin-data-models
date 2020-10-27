@@ -1,5 +1,5 @@
 {
-    "id": "urn:ngsi-ld:MenuItem:02",
+    "id": "urn:ngsi-ld:MenuItem:03",
     "type": "MenuItem",
     "name": {
         "type": "Property",
@@ -8,10 +8,6 @@
     "section": {
         "type": "Property",
         "value": "meat"
-    },
-    "suitableForDiet":{
-        "type":"Property",
-        "value":["Organic"]
     },
     "@context": [
         "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/SmartIrrigation/jsonld-contexts/smartIrrigation-compound.jsonld?token=AL5LEUQ4K76LKNIJZNLUHUK7OICPC"
