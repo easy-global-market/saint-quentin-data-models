@@ -6,8 +6,11 @@
         "object": "urn:ngsi-ld:Restaurant:01"
     },
     "checkedOn": {
-        "type": "Date",
-        "value": "2020-06-30"
+        "type": "Property",
+        "value": {
+            "@type": "Date",
+            "@value": "2020-06-30"
+        }
     },
     "counted": {
         "type": "Property",
