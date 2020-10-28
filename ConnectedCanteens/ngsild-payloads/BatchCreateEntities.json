@@ -1,0 +1,501 @@
+[
+    {
+        "id": "urn:ngsi-ld:City:01",
+        "type": "City",
+        "name": {
+            "type": "Property",
+            "value": "Saint-Quentin"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Free Text"
+        },
+        "location": {
+            "type": "GeoProperty",
+            "value": {
+                "type": "Point",
+                "coordinates": [
+                    3.2876,
+                    49.8489
+                ]
+            }
+        },
+        "url": {
+            "type": "Property",
+            "value": "https://www.saint-quentin.fr/"
+        },
+        "hasRestaurant": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Restaurant:01"
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Device:01",
+        "type": "Device",
+        "refDeviceModel": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:DeviceModel:01"
+        },
+        "dateInstalled": {
+            "type": "Property",
+            "value": {
+                "@type": "DateTime",
+                "@value": "2020-06-30T14:00:00Z"
+            }
+        },
+        "dateFirstUsed": {
+            "type": "Property",
+            "value": {
+                "@type": "DateTime",
+                "@value": "2020-06-30T14:00:00Z"
+            }
+        },
+        "dateLastValueReported": {
+            "type": "Property",
+            "value": {
+                "@type": "DateTime",
+                "@value": "2020-06-30T14:00:00Z"
+            }
+        },
+        "controlledProperty": {
+            "type": "Property",
+            "value": "count"
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Device:02",
+        "type": "Device",
+        "refDeviceModel": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:DeviceModel:01"
+        },
+        "controlledAsset": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Trash:bread"
+        },
+        "dateInstalled": {
+            "type": "Property",
+            "value": {
+                "@type": "DateTime",
+                "@value": "2020-06-30T14:00:00Z"
+            }
+        },
+        "dateFirstUsed": {
+            "type": "Property",
+            "value": {
+                "@type": "DateTime",
+                "@value": "2020-06-30T14:00:00Z"
+            }
+        },
+        "dateLastValueReported": {
+            "type": "Property",
+            "value": {
+                "@type": "DateTime",
+                "@value": "2020-06-30T14:00:00Z"
+            }
+        },
+        "controlledProperty": {
+            "type": "Property",
+            "value": "weight"
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Device:03",
+        "type": "Device",
+        "refDeviceModel": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:DeviceModel:01"
+        },
+        "controlledAsset": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Trash:meat"
+        },
+        "dateInstalled": {
+            "type": "Property",
+            "value": {
+                "@type": "DateTime",
+                "@value": "2020-06-30T14:00:00Z"
+            }
+        },
+        "dateFirstUsed": {
+            "type": "Property",
+            "value": {
+                "@type": "DateTime",
+                "@value": "2020-06-30T14:00:00Z"
+            }
+        },
+        "dateLastValueReported": {
+            "type": "Property",
+            "value": {
+                "@type": "DateTime",
+                "@value": "2020-06-30T14:00:00Z"
+            }
+        },
+        "controlledProperty": {
+            "type": "Property",
+            "value": "weight"
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Device:04",
+        "type": "Device",
+        "refDeviceModel": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:DeviceModel:01"
+        },
+        "controlledAsset": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Trash:vegetable"
+        },
+        "dateInstalled": {
+            "type": "Property",
+            "value": {
+                "@type": "DateTime",
+                "@value": "2020-06-30T14:00:00Z"
+            }
+        },
+        "dateFirstUsed": {
+            "type": "Property",
+            "value": {
+                "@type": "DateTime",
+                "@value": "2020-06-30T14:00:00Z"
+            }
+        },
+        "dateLastValueReported": {
+            "type": "Property",
+            "value": {
+                "@type": "DateTime",
+                "@value": "2020-06-30T14:00:00Z"
+            }
+        },
+        "controlledProperty": {
+            "type": "Property",
+            "value": "weight"
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:DeviceModel:01",
+        "type": "DeviceModel",
+        "@context": [
+            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Menu:01",
+        "type": "Menu",
+        "servedOn": {
+            "type": "Property",
+            "value": {
+                "@type": "Date",
+                "@value": "2020-06-30"
+            }
+        },
+        "hasMenuItem": [
+            {
+                "type": "Relationship",
+                "object": "urn:ngsi-ld:MenuItem:01",
+                "datasetId": "urn:ngsi-ld:Dataset:MenuItem:01"
+            },
+            {
+                "type": "Relationship",
+                "object": "urn:ngsi-ld:MenuItem:02",
+                "datasetId": "urn:ngsi-ld:Dataset:MenuItem:02"
+            }
+        ],
+        "refCity": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:City:01"
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:MenuItem:01",
+        "type": "MenuItem",
+        "name": {
+            "type": "Property",
+            "value": "Duo chou bio à l'irlandaise"
+        },
+        "section": {
+            "type": "Property",
+            "value": "appetizers"
+        },
+        "suitableForDiet": {
+            "type": "Property",
+            "value": [
+                "Vegetarian",
+                "Organic",
+                "NoPork"
+            ]
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:MenuItem:02",
+        "type": "MenuItem",
+        "name": {
+            "type": "Property",
+            "value": "Purée"
+        },
+        "section": {
+            "type": "Property",
+            "value": "vegetables"
+        },
+        "suitableForDiet": {
+            "type": "Property",
+            "value": [
+                "Vegetarian",
+                "Organic",
+                "NoPork"
+            ]
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:MenuItem:03",
+        "type": "MenuItem",
+        "name": {
+            "type": "Property",
+            "value": "filet de poulet à la moutarde"
+        },
+        "section": {
+            "type": "Property",
+            "value": "meat"
+        },
+        "suitableForDiet": {
+            "type": "Property",
+            "value": [
+                "NoVegetarian",
+                "NoOrganic",
+                "NoPork"
+            ]
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Restaurant:01",
+        "type": "Restaurant",
+        "name": {
+            "type": "Property",
+            "value": "Francois Collery"
+        },
+        "refCity": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:City:01"
+        },
+        "refAttendance": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Attendance:01"
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Trash:bread",
+        "type": "Trash",
+        "refRestaurant": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Restaurant:01"
+        },
+        "trashType": {
+            "type": "Property",
+            "value": "bread"
+        },
+        "weight": {
+            "type": "Property",
+            "value": 51,
+            "unitCode": "GRM",
+            "observedAt": "2020-06-30T14:30:00Z",
+            "observedBy": {
+                "type": "Relationship",
+                "object": "urn:ngsi-ld:Device:02"
+            }
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Trash:meat",
+        "type": "Trash",
+        "refRestaurant": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Restaurant:01"
+        },
+        "trashType": {
+            "type": "Property",
+            "value": "meat"
+        },
+        "weight": {
+            "type": "Property",
+            "value": 51,
+            "unitCode": "GRM",
+            "observedAt": "2020-06-30T14:30:00Z",
+            "observedBy": {
+                "type": "Relationship",
+                "object": "urn:ngsi-ld:Device:03"
+            }
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Trash:plastic",
+        "type": "Trash",
+        "refRestaurant": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Restaurant:01"
+        },
+        "trashType": {
+            "type": "Property",
+            "value": "plastic"
+        },
+        "weight": {
+            "type": "Property",
+            "value": 51,
+            "unitCode": "GRM",
+            "observedAt": "2020-06-30T14:30:00Z",
+            "observedBy": {
+                "type": "Relationship",
+                "object": "urn:ngsi-ld:Device:03"
+            }
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Trash:vegetable",
+        "type": "Trash",
+        "refRestaurant": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Restaurant:01"
+        },
+        "trashType": {
+            "type": "Property",
+            "value": "vegetable"
+        },
+        "weight": {
+            "type": "Property",
+            "value": 51,
+            "unitCode": "GRM",
+            "observedAt": "2020-06-30T14:30:00Z",
+            "observedBy": {
+                "type": "Relationship",
+                "object": "urn:ngsi-ld:Device:04"
+            }
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Attendance:01",
+        "type": "Attendance",
+        "refRestaurant": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Restaurant:01"
+        },
+        "checkedOn": {
+            "type": "Property",
+            "value": {
+                "@type": "Date",
+                "@value": "2020-06-30"
+            }
+        },
+        "counted": {
+            "type": "Property",
+            "value": 51,
+            "observedAt": "2020-06-30T14:30:00Z",
+            "observedBy": {
+                "type": "Relationship",
+                "object": "urn:ngsi-ld:Device:01"
+            }
+        },
+        "countedByCategory": [
+            {
+                "type": "Property",
+                "value": 50,
+                "observedAt": "2020-06-30T14:00:00Z",
+                "audience": {
+                    "type": "Property",
+                    "value": "Maternelles"
+                },
+                "state": {
+                    "type": "Property",
+                    "value": "Registered"
+                },
+                "datasetId": "urn:ngsi-ld:Dataset:Registered:Maternelles"
+            },
+            {
+                "type": "Property",
+                "value": 50,
+                "observedAt": "2020-06-30T14:00:00Z",
+                "audience": {
+                    "type": "Property",
+                    "value": "Maternelles"
+                },
+                "state": {
+                    "type": "Property",
+                    "value": "Actual"
+                },
+                "datasetId": "urn:ngsi-ld:Dataset:Actual:Maternelles"
+            },
+            {
+                "type": "Property",
+                "value": 50,
+                "observedAt": "2020-06-30T14:00:00Z",
+                "audience": {
+                    "type": "Property",
+                    "value": "Primaires"
+                },
+                "state": {
+                    "type": "Property",
+                    "value": "Registered"
+                },
+                "datasetId": "urn:ngsi-ld:Dataset:Registered:Primaires"
+            },
+            {
+                "type": "Property",
+                "value": 50,
+                "observedAt": "2020-06-30T14:00:00Z",
+                "audience": {
+                    "type": "Property",
+                    "value": "Primaires"
+                },
+                "state(?)": {
+                    "type": "Property",
+                    "value": "Actual"
+                },
+                "datasetId": "urn:ngsi-ld:Dataset:Actual:Primaires"
+            }
+        ],
+        "@context": [
+            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+        ]
+    }
+]

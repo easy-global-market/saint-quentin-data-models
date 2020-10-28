@@ -1,31 +1,25 @@
 {
     "@context": {
         "Attendance": "https://www.saint-quentin.fr/ontology#Attendance",
-        "City": "https://www.saint-quentin.fr/ontology#City",
-        "Device": "https://www.saint-quentin.fr/ontology#Device",
-        "DeviceModel": "https://www.saint-quentin.fr/ontology#DeviceModel",
-        "Menu": "https://www.saint-quentin.fr/ontology#Menu",
-        "MenuItem": "https://www.saint-quentin.fr/ontology#MenuItem",
-        "Restaurant": "https://www.saint-quentin.fr/ontology#Restaurant",
+        "City": "https://schema.org/City",
+        "Menu": "https://schema.org/Menu",
+        "MenuItem": "https://schema.org/MenuItem",
+        "Restaurant": "https://schema.org/Restaurant",
         "Trash": "https://www.saint-quentin.fr/ontology#Trash",
+
         "audience": "https://www.saint-quentin.fr/ontologyaudience#audience",
-        "controlledProperty": "https://www.saint-quentin.fr/ontology#controlledProperty",
         "checkedOn": "https://www.saint-quentin.fr/ontology#checkedOn",
         "counted": "https://www.saint-quentin.fr/ontology#counted",
         "countedByCategory": "https://www.saint-quentin.fr/ontology#countedByCategory",
-        "dateInstalled": "https://www.saint-quentin.fr/ontology#dateInstalled",
-        "dateFirstUsed": "https://www.saint-quentin.fr/ontology#dateFirstUsed",
-        "dateLastValueReported": "https://www.saint-quentin.fr/ontology#dateLastValueReported",
-        "observedBy": "https://www.saint-quentin.fr/ontology#observedBy",
-        "refDeviceModel": "https://www.saint-quentin.fr/ontology#refDeviceModel",
+        "hasRestaurant": "https://www.saint-quentin.fr/ontology#hasRestaurant",
+        "hasMenuItem": "https://schema.org/hasMenuItem",
         "refRestaurant": "https://www.saint-quentin.fr/ontology#refRestaurant",
         "servedOn": "https://www.saint-quentin.fr/ontology#servedOn",
         "refAttendance": "https://www.saint-quentin.fr/ontology#refAttendance",
         "refCity": "https://www.saint-quentin.fr/ontology#refCity",
         "section": "https://www.saint-quentin.fr/ontology#section",
-        "suitableForDiet": "https://www.saint-quentin.fr/ontology#suitableForDiet",
+        "suitableForDiet": "https://schema.org/suitableForDiet",
         "state": "https://www.saint-quentin.fr/ontology#state",
-        "trashType": "https://www.saint-quentin.fr/ontology#trashType",
-        "weight": "https://www.saint-quentin.fr/ontology#weight"
+        "trashType": "https://www.saint-quentin.fr/ontology#trashType"
     }
 }

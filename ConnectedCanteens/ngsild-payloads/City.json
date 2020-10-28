@@ -23,18 +23,11 @@
         "type": "Property",
         "value": "https://www.saint-quentin.fr/"
     },
-    "logo": {
-        "type": "Property",
-        "value": "https://www.saint-quentin.fr/uploads/Image/e4/SIT_STQUENTIN_111_SIT_STQUENTIN_089_stq_logo.png"
+    "hasRestaurant": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Restaurant:01"
     },
-    "hasStadium": [
-        {
-            "type": "Relationship",
-            "object": "urn:ngsi-ld:Stadium:01",
-            "datasetId": "urn:ngsi-ld:Dataset:Stadium:1"
-        }
-    ],
     "@context": [
-        "https://gist.githubusercontent.com/AHABID/529d19302860dc519307458772418487/raw/ffe1c376024167f36b0fa45b2a7ef3d7b53cc099/connectedCanteens-compound.jsonld"
+        "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
     ]
 }
