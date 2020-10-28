@@ -31,6 +31,6 @@
         "value": "count"
     },
     "@context": [
-        "https://gist.githubusercontent.com/AHABID/529d19302860dc519307458772418487/raw/06e0f46d153ab05dec36be15838d0410528ffd1b/connectedCanteens-compound.jsonld"
+        "https://gist.githubusercontent.com/AHABID/529d19302860dc519307458772418487/raw/ffe1c376024167f36b0fa45b2a7ef3d7b53cc099/connectedCanteens-compound.jsonld"
     ]
 }

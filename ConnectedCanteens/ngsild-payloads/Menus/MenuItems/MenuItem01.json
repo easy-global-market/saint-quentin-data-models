@@ -14,6 +14,6 @@
         "value":["Vegetarian","Organic","NoPork"]
     },
     "@context": [
-        "https://gist.githubusercontent.com/AHABID/529d19302860dc519307458772418487/raw/98218b13d88fb10a972abe5277cce91e0af43c10/connectedCanteens-compound.jsonld"
+        "https://gist.githubusercontent.com/AHABID/529d19302860dc519307458772418487/raw/ffe1c376024167f36b0fa45b2a7ef3d7b53cc099/connectedCanteens-compound.jsonld"
     ]
 }
