@@ -80,6 +80,6 @@
         }
     ],
     "@context": [
-        "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/SmartIrrigation/jsonld-contexts/smartIrrigation-compound.jsonld?token=AL5LEUQ4K76LKNIJZNLUHUK7OICPC"
+        "https://gist.githubusercontent.com/AHABID/529d19302860dc519307458772418487/raw/06e0f46d153ab05dec36be15838d0410528ffd1b/connectedCanteens-compound.jsonld"
     ]
 }

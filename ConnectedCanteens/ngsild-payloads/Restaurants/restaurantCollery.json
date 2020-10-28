@@ -14,6 +14,6 @@
         "object": "urn:ngsi-ld:Attendance:01"
     },
     "@context": [
-        "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/SmartIrrigation/jsonld-contexts/smartIrrigation-compound.jsonld?token=AL5LEUQ4K76LKNIJZNLUHUK7OICPC"
+        "https://gist.githubusercontent.com/AHABID/529d19302860dc519307458772418487/raw/98218b13d88fb10a972abe5277cce91e0af43c10/connectedCanteens-compound.jsonld"
     ]
 }
