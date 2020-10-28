@@ -1,6 +1,6 @@
 {
     "@context": [
-        "https://gist.github.com/easy-global-market/6f89f73058762262f23888459dab406c",
+        "https://gist.github.com/AHABID/6f89f73058762262f23888459dab406c",
         "http://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
     ]
 }
