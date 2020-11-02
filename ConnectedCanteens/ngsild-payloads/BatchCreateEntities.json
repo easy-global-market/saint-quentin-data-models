@@ -29,7 +29,7 @@
             "object": "urn:ngsi-ld:Restaurant:01"
         },
         "@context": [
-            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+            "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/ConnectedCanteens/jsonld-contexts/connectedCanteens-compound.jsonld"
         ]
     },
     {
@@ -65,7 +65,7 @@
             "value": "count"
         },
         "@context": [
-            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+            "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/ConnectedCanteens/jsonld-contexts/connectedCanteens-compound.jsonld"
         ]
     },
     {
@@ -105,7 +105,7 @@
             "value": "weight"
         },
         "@context": [
-            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+            "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/ConnectedCanteens/jsonld-contexts/connectedCanteens-compound.jsonld"
         ]
     },
     {
@@ -145,7 +145,7 @@
             "value": "weight"
         },
         "@context": [
-            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+            "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/ConnectedCanteens/jsonld-contexts/connectedCanteens-compound.jsonld"
         ]
     },
     {
@@ -185,14 +185,14 @@
             "value": "weight"
         },
         "@context": [
-            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+            "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/ConnectedCanteens/jsonld-contexts/connectedCanteens-compound.jsonld"
         ]
     },
     {
         "id": "urn:ngsi-ld:DeviceModel:01",
         "type": "DeviceModel",
         "@context": [
-            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+            "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/ConnectedCanteens/jsonld-contexts/connectedCanteens-compound.jsonld"
         ]
     },
     {
@@ -222,7 +222,7 @@
             "object": "urn:ngsi-ld:City:01"
         },
         "@context": [
-            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+            "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/ConnectedCanteens/jsonld-contexts/connectedCanteens-compound.jsonld"
         ]
     },
     {
@@ -245,7 +245,7 @@
             ]
         },
         "@context": [
-            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+            "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/ConnectedCanteens/jsonld-contexts/connectedCanteens-compound.jsonld"
         ]
     },
     {
@@ -268,7 +268,7 @@
             ]
         },
         "@context": [
-            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+            "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/ConnectedCanteens/jsonld-contexts/connectedCanteens-compound.jsonld"
         ]
     },
     {
@@ -291,7 +291,7 @@
             ]
         },
         "@context": [
-            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+            "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/ConnectedCanteens/jsonld-contexts/connectedCanteens-compound.jsonld"
         ]
     },
     {
@@ -310,7 +310,7 @@
             "object": "urn:ngsi-ld:Attendance:01"
         },
         "@context": [
-            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+            "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/ConnectedCanteens/jsonld-contexts/connectedCanteens-compound.jsonld"
         ]
     },
     {
@@ -335,7 +335,7 @@
             }
         },
         "@context": [
-            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+            "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/ConnectedCanteens/jsonld-contexts/connectedCanteens-compound.jsonld"
         ]
     },
     {
@@ -360,7 +360,7 @@
             }
         },
         "@context": [
-            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+            "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/ConnectedCanteens/jsonld-contexts/connectedCanteens-compound.jsonld"
         ]
     },
     {
@@ -385,7 +385,7 @@
             }
         },
         "@context": [
-            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+            "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/ConnectedCanteens/jsonld-contexts/connectedCanteens-compound.jsonld"
         ]
     },
     {
@@ -410,7 +410,7 @@
             }
         },
         "@context": [
-            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+            "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/ConnectedCanteens/jsonld-contexts/connectedCanteens-compound.jsonld"
         ]
     },
     {
@@ -495,7 +495,7 @@
             }
         ],
         "@context": [
-            "https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld"
+            "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/ConnectedCanteens/jsonld-contexts/connectedCanteens-compound.jsonld"
         ]
     }
 ]
