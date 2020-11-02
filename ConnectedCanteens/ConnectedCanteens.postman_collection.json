@@ -1,0 +1,1794 @@
+{
+	"info": {
+		"_postman_id": "bc737868-cf54-4403-a99c-df9fe4f295d7",
+		"name": "ConnectedCanteens",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Entity",
+			"item": [
+				{
+					"name": "Get Entities by Type",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/ld+json"
+							},
+							{
+								"key": "Link",
+								"type": "text",
+								"value": "<{{context}}>"
+							},
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{gatewayServer}}/ngsi-ld/v1/entities?type=MenuItem",
+							"host": [
+								"{{gatewayServer}}"
+							],
+							"path": [
+								"ngsi-ld",
+								"v1",
+								"entities"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "MenuItem"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Entity By Id with createdAt and modifiedAt Params",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/ld+json"
+							},
+							{
+								"key": "",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{gatewayServer}}/ngsi-ld/v1/entities/urn:ngsi-ld:MenuItem:01?options=sysAttrs",
+							"host": [
+								"{{gatewayServer}}"
+							],
+							"path": [
+								"ngsi-ld",
+								"v1",
+								"entities",
+								"urn:ngsi-ld:MenuItem:01"
+							],
+							"query": [
+								{
+									"key": "options",
+									"value": "sysAttrs"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Entity",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true,
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/ld+json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/ld+json",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"urn:ngsi-ld:Attendance:001\",\r\n    \"type\": \"Attendance\",\r\n    \"refRestaurant\": {\r\n        \"type\": \"Relationship\",\r\n        \"object\": \"urn:ngsi-ld:Restaurant:01\"\r\n    },\r\n    \"checkedOn\": {\r\n        \"type\": \"Property\",\r\n        \"value\": {\r\n            \"@type\": \"Date\",\r\n            \"@value\": \"2020-06-30\"\r\n        }\r\n    },\r\n    \"counted\": {\r\n        \"type\": \"Property\",\r\n        \"value\": 51,\r\n        \"observedAt\": \"2020-06-30T14:30:00Z\",\r\n        \"observedBy\": {\r\n            \"type\": \"Relationship\",\r\n            \"object\": \"urn:ngsi-ld:Device:01\"\r\n        }\r\n    },\r\n    \"countedByCategory\": [\r\n        {\r\n            \"type\": \"Property\",\r\n            \"value\": 50,\r\n            \"observedAt\": \"2020-06-30T14:00:00Z\",\r\n            \"audience\": {\r\n                \"type\": \"Property\",\r\n                \"value\": \"Maternelles\"\r\n            },\r\n            \"state\": {\r\n                \"type\": \"Property\",\r\n                \"value\": \"Registered\"\r\n            },\r\n            \"datasetId\": \"urn:ngsi-ld:Dataset:Registered:Maternelles\"\r\n        },\r\n        {\r\n            \"type\": \"Property\",\r\n            \"value\": 50,\r\n            \"observedAt\": \"2020-06-30T14:00:00Z\",\r\n            \"audience\": {\r\n                \"type\": \"Property\",\r\n                \"value\": \"Maternelles\"\r\n            },\r\n            \"state\": {\r\n                \"type\": \"Property\",\r\n                \"value\": \"Actual\"\r\n            },\r\n            \"datasetId\": \"urn:ngsi-ld:Dataset:Actual:Maternelles\"\r\n        },\r\n        {\r\n            \"type\": \"Property\",\r\n            \"value\": 50,\r\n            \"observedAt\": \"2020-06-30T14:00:00Z\",\r\n            \"audience\": {\r\n                \"type\": \"Property\",\r\n                \"value\": \"Primaires\"\r\n            },\r\n            \"state\": {\r\n                \"type\": \"Property\",\r\n                \"value\": \"Registered\"\r\n            },\r\n            \"datasetId\": \"urn:ngsi-ld:Dataset:Registered:Primaires\"\r\n        },\r\n        {\r\n            \"type\": \"Property\",\r\n            \"value\": 50,\r\n            \"observedAt\": \"2020-06-30T14:00:00Z\",\r\n            \"audience\": {\r\n                \"type\": \"Property\",\r\n                \"value\": \"Primaires\"\r\n            },\r\n            \"state(?)\": {\r\n                \"type\": \"Property\",\r\n                \"value\": \"Actual\"\r\n            },\r\n            \"datasetId\": \"urn:ngsi-ld:Dataset:Actual:Primaires\"\r\n        }\r\n    ],\r\n    \"@context\": [\r\n        \"https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{gatewayServer}}/ngsi-ld/v1/entities",
+							"host": [
+								"{{gatewayServer}}"
+							],
+							"path": [
+								"ngsi-ld",
+								"v1",
+								"entities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a Batch of Entities",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/ld+json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/ld+json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"id\": \"urn:ngsi-ld:City:01\",\r\n        \"type\": \"City\",\r\n        \"name\": {\r\n            \"type\": \"Property\",\r\n            \"value\": \"Saint-Quentin\"\r\n        },\r\n        \"description\": {\r\n            \"type\": \"Property\",\r\n            \"value\": \"Free Text\"\r\n        },\r\n        \"location\": {\r\n            \"type\": \"GeoProperty\",\r\n            \"value\": {\r\n                \"type\": \"Point\",\r\n                \"coordinates\": [\r\n                    3.2876,\r\n                    49.8489\r\n                ]\r\n            }\r\n        },\r\n        \"url\": {\r\n            \"type\": \"Property\",\r\n            \"value\": \"https://www.saint-quentin.fr/\"\r\n        },\r\n        \"hasRestaurant\": {\r\n            \"type\": \"Relationship\",\r\n            \"object\": \"urn:ngsi-ld:Restaurant:01\"\r\n        },\r\n        \"@context\": [\r\n            \"https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld\"\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"urn:ngsi-ld:Device:01\",\r\n        \"type\": \"Device\",\r\n        \"refDeviceModel\": {\r\n            \"type\": \"Relationship\",\r\n            \"object\": \"urn:ngsi-ld:DeviceModel:01\"\r\n        },\r\n        \"dateInstalled\": {\r\n            \"type\": \"Property\",\r\n            \"value\": {\r\n                \"@type\": \"DateTime\",\r\n                \"@value\": \"2020-06-30T14:00:00Z\"\r\n            }\r\n        },\r\n        \"dateFirstUsed\": {\r\n            \"type\": \"Property\",\r\n            \"value\": {\r\n                \"@type\": \"DateTime\",\r\n                \"@value\": \"2020-06-30T14:00:00Z\"\r\n            }\r\n        },\r\n        \"dateLastValueReported\": {\r\n            \"type\": \"Property\",\r\n            \"value\": {\r\n                \"@type\": \"DateTime\",\r\n                \"@value\": \"2020-06-30T14:00:00Z\"\r\n            }\r\n        },\r\n        \"controlledProperty\": {\r\n            \"type\": \"Property\",\r\n            \"value\": \"count\"\r\n        },\r\n        \"@context\": [\r\n            \"https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld\"\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"urn:ngsi-ld:Device:02\",\r\n        \"type\": \"Device\",\r\n        \"refDeviceModel\": {\r\n            \"type\": \"Relationship\",\r\n            \"object\": \"urn:ngsi-ld:DeviceModel:01\"\r\n        },\r\n        \"controlledAsset\": {\r\n            \"type\": \"Relationship\",\r\n            \"object\": \"urn:ngsi-ld:Trash:bread\"\r\n        },\r\n        \"dateInstalled\": {\r\n            \"type\": \"Property\",\r\n            \"value\": {\r\n                \"@type\": \"DateTime\",\r\n                \"@value\": \"2020-06-30T14:00:00Z\"\r\n            }\r\n        },\r\n        \"dateFirstUsed\": {\r\n            \"type\": \"Property\",\r\n            \"value\": {\r\n                \"@type\": \"DateTime\",\r\n                \"@value\": \"2020-06-30T14:00:00Z\"\r\n            }\r\n        },\r\n        \"dateLastValueReported\": {\r\n            \"type\": \"Property\",\r\n            \"value\": {\r\n                \"@type\": \"DateTime\",\r\n                \"@value\": \"2020-06-30T14:00:00Z\"\r\n            }\r\n        },\r\n        \"controlledProperty\": {\r\n            \"type\": \"Property\",\r\n            \"value\": \"weight\"\r\n        },\r\n        \"@context\": [\r\n            \"https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld\"\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"urn:ngsi-ld:Device:03\",\r\n        \"type\": \"Device\",\r\n        \"refDeviceModel\": {\r\n            \"type\": \"Relationship\",\r\n            \"object\": \"urn:ngsi-ld:DeviceModel:01\"\r\n        },\r\n        \"controlledAsset\": {\r\n            \"type\": \"Relationship\",\r\n            \"object\": \"urn:ngsi-ld:Trash:meat\"\r\n        },\r\n        \"dateInstalled\": {\r\n            \"type\": \"Property\",\r\n            \"value\": {\r\n                \"@type\": \"DateTime\",\r\n                \"@value\": \"2020-06-30T14:00:00Z\"\r\n            }\r\n        },\r\n        \"dateFirstUsed\": {\r\n            \"type\": \"Property\",\r\n            \"value\": {\r\n                \"@type\": \"DateTime\",\r\n                \"@value\": \"2020-06-30T14:00:00Z\"\r\n            }\r\n        },\r\n        \"dateLastValueReported\": {\r\n            \"type\": \"Property\",\r\n            \"value\": {\r\n                \"@type\": \"DateTime\",\r\n                \"@value\": \"2020-06-30T14:00:00Z\"\r\n            }\r\n        },\r\n        \"controlledProperty\": {\r\n            \"type\": \"Property\",\r\n            \"value\": \"weight\"\r\n        },\r\n        \"@context\": [\r\n            \"https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld\"\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"urn:ngsi-ld:Device:04\",\r\n        \"type\": \"Device\",\r\n        \"refDeviceModel\": {\r\n            \"type\": \"Relationship\",\r\n            \"object\": \"urn:ngsi-ld:DeviceModel:01\"\r\n        },\r\n        \"controlledAsset\": {\r\n            \"type\": \"Relationship\",\r\n            \"object\": \"urn:ngsi-ld:Trash:vegetable\"\r\n        },\r\n        \"dateInstalled\": {\r\n            \"type\": \"Property\",\r\n            \"value\": {\r\n                \"@type\": \"DateTime\",\r\n                \"@value\": \"2020-06-30T14:00:00Z\"\r\n            }\r\n        },\r\n        \"dateFirstUsed\": {\r\n            \"type\": \"Property\",\r\n            \"value\": {\r\n                \"@type\": \"DateTime\",\r\n                \"@value\": \"2020-06-30T14:00:00Z\"\r\n            }\r\n        },\r\n        \"dateLastValueReported\": {\r\n            \"type\": \"Property\",\r\n            \"value\": {\r\n                \"@type\": \"DateTime\",\r\n                \"@value\": \"2020-06-30T14:00:00Z\"\r\n            }\r\n        },\r\n        \"controlledProperty\": {\r\n            \"type\": \"Property\",\r\n            \"value\": \"weight\"\r\n        },\r\n        \"@context\": [\r\n            \"https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld\"\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"urn:ngsi-ld:DeviceModel:01\",\r\n        \"type\": \"DeviceModel\",\r\n        \"@context\": [\r\n            \"https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld\"\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"urn:ngsi-ld:Menu:01\",\r\n        \"type\": \"Menu\",\r\n        \"servedOn\": {\r\n            \"type\": \"Property\",\r\n            \"value\": {\r\n                \"@type\": \"Date\",\r\n                \"@value\": \"2020-06-30\"\r\n            }\r\n        },\r\n        \"hasMenuItem\": [\r\n            {\r\n                \"type\": \"Relationship\",\r\n                \"object\": \"urn:ngsi-ld:MenuItem:01\",\r\n                \"datasetId\": \"urn:ngsi-ld:Dataset:MenuItem:01\"\r\n            },\r\n            {\r\n                \"type\": \"Relationship\",\r\n                \"object\": \"urn:ngsi-ld:MenuItem:02\",\r\n                \"datasetId\": \"urn:ngsi-ld:Dataset:MenuItem:02\"\r\n            }\r\n        ],\r\n        \"refCity\": {\r\n            \"type\": \"Relationship\",\r\n            \"object\": \"urn:ngsi-ld:City:01\"\r\n        },\r\n        \"@context\": [\r\n            \"https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld\"\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"urn:ngsi-ld:MenuItem:01\",\r\n        \"type\": \"MenuItem\",\r\n        \"name\": {\r\n            \"type\": \"Property\",\r\n            \"value\": \"Duo chou bio à l'irlandaise\"\r\n        },\r\n        \"section\": {\r\n            \"type\": \"Property\",\r\n            \"value\": \"appetizers\"\r\n        },\r\n        \"suitableForDiet\": {\r\n            \"type\": \"Property\",\r\n            \"value\": [\r\n                \"Vegetarian\",\r\n                \"Organic\",\r\n                \"NoPork\"\r\n            ]\r\n        },\r\n        \"@context\": [\r\n            \"https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld\"\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"urn:ngsi-ld:MenuItem:02\",\r\n        \"type\": \"MenuItem\",\r\n        \"name\": {\r\n            \"type\": \"Property\",\r\n            \"value\": \"Purée\"\r\n        },\r\n        \"section\": {\r\n            \"type\": \"Property\",\r\n            \"value\": \"vegetables\"\r\n        },\r\n        \"suitableForDiet\": {\r\n            \"type\": \"Property\",\r\n            \"value\": [\r\n                \"Vegetarian\",\r\n                \"Organic\",\r\n                \"NoPork\"\r\n            ]\r\n        },\r\n        \"@context\": [\r\n            \"https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld\"\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"urn:ngsi-ld:MenuItem:03\",\r\n        \"type\": \"MenuItem\",\r\n        \"name\": {\r\n            \"type\": \"Property\",\r\n            \"value\": \"filet de poulet à la moutarde\"\r\n        },\r\n        \"section\": {\r\n            \"type\": \"Property\",\r\n            \"value\": \"meat\"\r\n        },\r\n        \"suitableForDiet\": {\r\n            \"type\": \"Property\",\r\n            \"value\": [\r\n                \"NoVegetarian\",\r\n                \"NoOrganic\",\r\n                \"NoPork\"\r\n            ]\r\n        },\r\n        \"@context\": [\r\n            \"https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld\"\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"urn:ngsi-ld:Restaurant:01\",\r\n        \"type\": \"Restaurant\",\r\n        \"name\": {\r\n            \"type\": \"Property\",\r\n            \"value\": \"Francois Collery\"\r\n        },\r\n        \"refCity\": {\r\n            \"type\": \"Relationship\",\r\n            \"object\": \"urn:ngsi-ld:City:01\"\r\n        },\r\n        \"refAttendance\": {\r\n            \"type\": \"Relationship\",\r\n            \"object\": \"urn:ngsi-ld:Attendance:01\"\r\n        },\r\n        \"@context\": [\r\n            \"https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld\"\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"urn:ngsi-ld:Trash:bread\",\r\n        \"type\": \"Trash\",\r\n        \"refRestaurant\": {\r\n            \"type\": \"Relationship\",\r\n            \"object\": \"urn:ngsi-ld:Restaurant:01\"\r\n        },\r\n        \"trashType\": {\r\n            \"type\": \"Property\",\r\n            \"value\": \"bread\"\r\n        },\r\n        \"weight\": {\r\n            \"type\": \"Property\",\r\n            \"value\": 51,\r\n            \"unitCode\": \"GRM\",\r\n            \"observedAt\": \"2020-06-30T14:30:00Z\",\r\n            \"observedBy\": {\r\n                \"type\": \"Relationship\",\r\n                \"object\": \"urn:ngsi-ld:Device:02\"\r\n            }\r\n        },\r\n        \"@context\": [\r\n            \"https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld\"\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"urn:ngsi-ld:Trash:meat\",\r\n        \"type\": \"Trash\",\r\n        \"refRestaurant\": {\r\n            \"type\": \"Relationship\",\r\n            \"object\": \"urn:ngsi-ld:Restaurant:01\"\r\n        },\r\n        \"trashType\": {\r\n            \"type\": \"Property\",\r\n            \"value\": \"meat\"\r\n        },\r\n        \"weight\": {\r\n            \"type\": \"Property\",\r\n            \"value\": 51,\r\n            \"unitCode\": \"GRM\",\r\n            \"observedAt\": \"2020-06-30T14:30:00Z\",\r\n            \"observedBy\": {\r\n                \"type\": \"Relationship\",\r\n                \"object\": \"urn:ngsi-ld:Device:03\"\r\n            }\r\n        },\r\n        \"@context\": [\r\n            \"https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld\"\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"urn:ngsi-ld:Trash:plastic\",\r\n        \"type\": \"Trash\",\r\n        \"refRestaurant\": {\r\n            \"type\": \"Relationship\",\r\n            \"object\": \"urn:ngsi-ld:Restaurant:01\"\r\n        },\r\n        \"trashType\": {\r\n            \"type\": \"Property\",\r\n            \"value\": \"plastic\"\r\n        },\r\n        \"weight\": {\r\n            \"type\": \"Property\",\r\n            \"value\": 51,\r\n            \"unitCode\": \"GRM\",\r\n            \"observedAt\": \"2020-06-30T14:30:00Z\",\r\n            \"observedBy\": {\r\n                \"type\": \"Relationship\",\r\n                \"object\": \"urn:ngsi-ld:Device:03\"\r\n            }\r\n        },\r\n        \"@context\": [\r\n            \"https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld\"\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"urn:ngsi-ld:Trash:vegetable\",\r\n        \"type\": \"Trash\",\r\n        \"refRestaurant\": {\r\n            \"type\": \"Relationship\",\r\n            \"object\": \"urn:ngsi-ld:Restaurant:01\"\r\n        },\r\n        \"trashType\": {\r\n            \"type\": \"Property\",\r\n            \"value\": \"vegetable\"\r\n        },\r\n        \"weight\": {\r\n            \"type\": \"Property\",\r\n            \"value\": 51,\r\n            \"unitCode\": \"GRM\",\r\n            \"observedAt\": \"2020-06-30T14:30:00Z\",\r\n            \"observedBy\": {\r\n                \"type\": \"Relationship\",\r\n                \"object\": \"urn:ngsi-ld:Device:04\"\r\n            }\r\n        },\r\n        \"@context\": [\r\n            \"https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld\"\r\n        ]\r\n    },\r\n    {\r\n        \"id\": \"urn:ngsi-ld:Attendance:01\",\r\n        \"type\": \"Attendance\",\r\n        \"refRestaurant\": {\r\n            \"type\": \"Relationship\",\r\n            \"object\": \"urn:ngsi-ld:Restaurant:01\"\r\n        },\r\n        \"checkedOn\": {\r\n            \"type\": \"Property\",\r\n            \"value\": {\r\n                \"@type\": \"Date\",\r\n                \"@value\": \"2020-06-30\"\r\n            }\r\n        },\r\n        \"counted\": {\r\n            \"type\": \"Property\",\r\n            \"value\": 51,\r\n            \"observedAt\": \"2020-06-30T14:30:00Z\",\r\n            \"observedBy\": {\r\n                \"type\": \"Relationship\",\r\n                \"object\": \"urn:ngsi-ld:Device:01\"\r\n            }\r\n        },\r\n        \"countedByCategory\": [\r\n            {\r\n                \"type\": \"Property\",\r\n                \"value\": 50,\r\n                \"observedAt\": \"2020-06-30T14:00:00Z\",\r\n                \"audience\": {\r\n                    \"type\": \"Property\",\r\n                    \"value\": \"Maternelles\"\r\n                },\r\n                \"state\": {\r\n                    \"type\": \"Property\",\r\n                    \"value\": \"Registered\"\r\n                },\r\n                \"datasetId\": \"urn:ngsi-ld:Dataset:Registered:Maternelles\"\r\n            },\r\n            {\r\n                \"type\": \"Property\",\r\n                \"value\": 50,\r\n                \"observedAt\": \"2020-06-30T14:00:00Z\",\r\n                \"audience\": {\r\n                    \"type\": \"Property\",\r\n                    \"value\": \"Maternelles\"\r\n                },\r\n                \"state\": {\r\n                    \"type\": \"Property\",\r\n                    \"value\": \"Actual\"\r\n                },\r\n                \"datasetId\": \"urn:ngsi-ld:Dataset:Actual:Maternelles\"\r\n            },\r\n            {\r\n                \"type\": \"Property\",\r\n                \"value\": 50,\r\n                \"observedAt\": \"2020-06-30T14:00:00Z\",\r\n                \"audience\": {\r\n                    \"type\": \"Property\",\r\n                    \"value\": \"Primaires\"\r\n                },\r\n                \"state\": {\r\n                    \"type\": \"Property\",\r\n                    \"value\": \"Registered\"\r\n                },\r\n                \"datasetId\": \"urn:ngsi-ld:Dataset:Registered:Primaires\"\r\n            },\r\n            {\r\n                \"type\": \"Property\",\r\n                \"value\": 50,\r\n                \"observedAt\": \"2020-06-30T14:00:00Z\",\r\n                \"audience\": {\r\n                    \"type\": \"Property\",\r\n                    \"value\": \"Primaires\"\r\n                },\r\n                \"state\": {\r\n                    \"type\": \"Property\",\r\n                    \"value\": \"Actual\"\r\n                },\r\n                \"datasetId\": \"urn:ngsi-ld:Dataset:Actual:Primaires\"\r\n            }\r\n        ],\r\n        \"@context\": [\r\n            \"https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld\"\r\n        ]\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{gatewayServer}}/ngsi-ld/v1/entityOperations/create",
+							"host": [
+								"{{gatewayServer}}"
+							],
+							"path": [
+								"ngsi-ld",
+								"v1",
+								"entityOperations",
+								"create"
+							]
+						},
+						"description": "creatiing all the Entities using onr query"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Entity",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer null",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/ld+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{gatewayServer}}/ngsi-ld/v1/entities/urn:ngsi-ld:Attendance:001",
+							"host": [
+								"{{gatewayServer}}"
+							],
+							"path": [
+								"ngsi-ld",
+								"v1",
+								"entities",
+								"urn:ngsi-ld:Attendance:001"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "6fe9369f-f61a-4011-93fb-c686fe16f12b",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "73e82647-6c2f-466e-b5e9-7a88a0381bca",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Update Attendance DataSet ids",
+			"item": [
+				{
+					"name": "Update Actual Maternelles",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							},
+							{
+								"key": "Link",
+								"type": "text",
+								"value": "<{{context}}>"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"countedByCategory\": \r\n    {\r\n        \"type\": \"Property\",\r\n        \"datasetId\": \"urn:ngsi-ld:Dataset:Actual:Maternelles\",\r\n        \"value\": 40,\r\n        \"observedAt\": \"2020-10-22T14:00:00Z\",\r\n        \"state\": {\r\n            \"type\": \"Property\",\r\n            \"value\": \"Actual\"\r\n        },\r\n        \"audience\": {\r\n            \"type\": \"Property\",\r\n            \"value\": \"Maternelles\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{gatewayServer}}/ngsi-ld/v1/entities/urn:ngsi-ld:Attendance:01/attrs",
+							"host": [
+								"{{gatewayServer}}"
+							],
+							"path": [
+								"ngsi-ld",
+								"v1",
+								"entities",
+								"urn:ngsi-ld:Attendance:01",
+								"attrs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Registered Maternelles",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/ld+json"
+							},
+							{
+								"key": "Link",
+								"type": "text",
+								"value": "<{{context}}>"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"countedByCategory\": \r\n    {\r\n        \"type\": \"Property\",\r\n        \"datasetId\": \"urn:ngsi-ld:Dataset:Registered:Maternelles\",\r\n        \"value\": 36,\r\n        \"observedAt\": \"2020-10-20T14:00:00Z\",\r\n        \"state\": {\r\n            \"type\": \"Property\",\r\n            \"value\": \"Registered\"\r\n        },\r\n        \"audience\": {\r\n            \"type\": \"Property\",\r\n            \"value\": \"Maternelles\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{gatewayServer}}/ngsi-ld/v1/entities/urn:ngsi-ld:Attendance:01/attrs",
+							"host": [
+								"{{gatewayServer}}"
+							],
+							"path": [
+								"ngsi-ld",
+								"v1",
+								"entities",
+								"urn:ngsi-ld:Attendance:01",
+								"attrs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Registered Primaires",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/ld+json"
+							},
+							{
+								"key": "Link",
+								"type": "text",
+								"value": "<{{context}}>"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"countedByCategory\": \r\n    {\r\n        \"type\": \"Property\",\r\n        \"datasetId\": \"urn:ngsi-ld:Dataset:Registered:Primaires\",\r\n        \"value\": 50,\r\n        \"observedAt\": \"2020-06-30T14:00:00Z\",\r\n        \"state\": {\r\n            \"type\": \"Property\",\r\n            \"value\": \"Registered\"\r\n        },\r\n        \"audience\": {\r\n            \"type\": \"Property\",\r\n            \"value\": \"Primaires\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{gatewayServer}}/ngsi-ld/v1/entities/urn:ngsi-ld:Attendance:01/attrs",
+							"host": [
+								"{{gatewayServer}}"
+							],
+							"path": [
+								"ngsi-ld",
+								"v1",
+								"entities",
+								"urn:ngsi-ld:Attendance:01",
+								"attrs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Actual Primaires",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/ld+json"
+							},
+							{
+								"key": "Link",
+								"type": "text",
+								"value": "<{{context}}>"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"countedByCategory\": \r\n    {\r\n        \"type\": \"Property\",\r\n        \"datasetId\": \"urn:ngsi-ld:Dataset:Actual:Primaires\",\r\n        \"value\": 50,\r\n        \"observedAt\": \"2020-06-30T14:00:00Z\",\r\n        \"state\": {\r\n            \"type\": \"Property\",\r\n            \"value\": \"Actual\"\r\n        },\r\n        \"audience\": {\r\n            \"type\": \"Property\",\r\n            \"value\": \"Primaires\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{gatewayServer}}/ngsi-ld/v1/entities/urn:ngsi-ld:Attendance:01/attrs",
+							"host": [
+								"{{gatewayServer}}"
+							],
+							"path": [
+								"ngsi-ld",
+								"v1",
+								"entities",
+								"urn:ngsi-ld:Attendance:01",
+								"attrs"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "0c33872e-cd72-4abf-a123-5aa527f9359c",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "79005cd4-589d-4d62-8de2-618d2ae39483",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Update Attendance conted",
+			"item": [
+				{
+					"name": "Update Counted Attendance",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/ld+json"
+							},
+							{
+								"key": "Link",
+								"type": "text",
+								"value": "<{{context}}>"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"counted\": {\r\n        \"type\": \"Property\",\r\n        \"observedBy\": {\r\n            \"type\": \"Relationship\",\r\n            \"object\": \"urn:ngsi-ld:Device:01\"\r\n        },\r\n        \"value\": 51,\r\n        \"observedAt\": \"2020-06-30T14:30:00Z\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{gatewayServer}}/ngsi-ld/v1/entities/urn:ngsi-ld:Attendance:XX/attrs",
+							"host": [
+								"{{gatewayServer}}"
+							],
+							"path": [
+								"ngsi-ld",
+								"v1",
+								"entities",
+								"urn:ngsi-ld:Attendance:XX",
+								"attrs"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "209248b2-0e43-487f-adfc-e7eaa0e8defc",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "931c6519-9d6f-473c-b9ce-82d059096a6e",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Get Temporal Evolution of Attendance",
+			"item": [
+				{
+					"name": "Get Evolution of Attendance Entity",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Link",
+								"type": "text",
+								"value": "<https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld>"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{gatewayServer}}/ngsi-ld/v1/temporal/entities/urn:ngsi-ld:Attendance:01?timerel=after&time=2020-01-01T14:30:00Z&options=temporalValues",
+							"host": [
+								"{{gatewayServer}}"
+							],
+							"path": [
+								"ngsi-ld",
+								"v1",
+								"temporal",
+								"entities",
+								"urn:ngsi-ld:Attendance:01"
+							],
+							"query": [
+								{
+									"key": "timerel",
+									"value": "after"
+								},
+								{
+									"key": "time",
+									"value": "2020-01-01T14:30:00Z"
+								},
+								{
+									"key": "options",
+									"value": "temporalValues"
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Temporal  Evolution of Attendance in specific time",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Link",
+								"type": "text",
+								"value": "<https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld>"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{gatewayServer}}/ngsi-ld/v1/temporal/entities/urn:ngsi-ld:Attendance:01?timerel=between&time=2020-01-01T14:30:00Z&endTime=2020-12-31T14:30:00Z&attrs=countedByCategory,counted&options=temporalValues",
+							"host": [
+								"{{gatewayServer}}"
+							],
+							"path": [
+								"ngsi-ld",
+								"v1",
+								"temporal",
+								"entities",
+								"urn:ngsi-ld:Attendance:01"
+							],
+							"query": [
+								{
+									"key": "timerel",
+									"value": "between"
+								},
+								{
+									"key": "time",
+									"value": "2020-01-01T14:30:00Z"
+								},
+								{
+									"key": "endTime",
+									"value": "2020-12-31T14:30:00Z"
+								},
+								{
+									"key": "attrs",
+									"value": "countedByCategory,counted"
+								},
+								{
+									"key": "options",
+									"value": "temporalValues"
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "attrs",
+									"value": "counted",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Temporal  Evolution of Attendance- Counted by category Copy",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Link",
+								"type": "text",
+								"value": "<https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld>"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{gatewayServer}}/ngsi-ld/v1/temporal/entities/urn:ngsi-ld:Attendance:01?timerel=after&time=2020-01-01T14:30:00Z&attrs=countedByCategory&options=temporalValues",
+							"host": [
+								"{{gatewayServer}}"
+							],
+							"path": [
+								"ngsi-ld",
+								"v1",
+								"temporal",
+								"entities",
+								"urn:ngsi-ld:Attendance:01"
+							],
+							"query": [
+								{
+									"key": "timerel",
+									"value": "after"
+								},
+								{
+									"key": "time",
+									"value": "2020-01-01T14:30:00Z"
+								},
+								{
+									"key": "attrs",
+									"value": "countedByCategory"
+								},
+								{
+									"key": "options",
+									"value": "temporalValues"
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "attrs",
+									"value": "counted",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "1c4389da-ed68-409d-9479-5ec19cbf5bcd",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "a0fd9604-9485-4548-9725-4024423578d9",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "get the menu of a specific Date",
+			"item": [
+				{
+					"name": "Get MenuItems by Sections",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "8814d685-7630-4e34-bc53-c5b69104be45",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/ld+json"
+							},
+							{
+								"key": "Link",
+								"type": "text",
+								"value": "<https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld>"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{gatewayServer}}/ngsi-ld/v1/entities?q=servedOn==2020-06-30&type=Menu",
+							"host": [
+								"{{gatewayServer}}"
+							],
+							"path": [
+								"ngsi-ld",
+								"v1",
+								"entities"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "servedOn==2020-06-30"
+								},
+								{
+									"key": "type",
+									"value": "Menu"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "86075b07-122d-4377-a7d2-34172128e7cd",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "a88ac810-fb29-45fc-b6ca-b24c111fd87b",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Complex Queries",
+			"item": [
+				{
+					"name": "Get atttendance by Restanrant Name",
+					"item": [
+						{
+							"name": "Get Restaurant Id by name",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "dbe299a1-898d-452d-9e83-6e40ffc7050a",
+										"exec": [
+											"postman.setEnvironmentVariable(\"refAttendance\");\r",
+											"var jsonData = JSON.parse(responseBody);\r",
+											"postman.setEnvironmentVariable(\"refAttendance\", jsonData[0].refAttendance.object);\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true,
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/ld+json"
+									},
+									{
+										"key": "Link",
+										"type": "text",
+										"value": "<https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{gatewayServer}}/ngsi-ld/v1/entities?type=Restaurant&q=name==Francois Collery",
+									"host": [
+										"{{gatewayServer}}"
+									],
+									"path": [
+										"ngsi-ld",
+										"v1",
+										"entities"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "Restaurant"
+										},
+										{
+											"key": "q",
+											"value": "name==Francois Collery"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Attendance of Restaurant",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "47ae6d3a-f13e-499f-88c7-7daf4f4ddd8f",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true,
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/ld+json"
+									},
+									{
+										"key": "Link",
+										"type": "text",
+										"value": "<https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{gatewayServer}}/ngsi-ld/v1/entities/{{refAttendance}}",
+									"host": [
+										"{{gatewayServer}}"
+									],
+									"path": [
+										"ngsi-ld",
+										"v1",
+										"entities",
+										"{{refAttendance}}"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "929df28f-a060-45cb-90a6-663c657ccfd8",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "e533b811-0284-4a5b-9a3f-1a83eb56688e",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Get Menu Item of a Menu",
+					"item": [
+						{
+							"name": "Get A Menu",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "49800155-a66b-4a6e-86f4-1cf75dd47cb6",
+										"exec": [
+											"postman.setEnvironmentVariable(\"hasMenuItem\");\r",
+											"var jsonData = JSON.parse(responseBody);\r",
+											"postman.setEnvironmentVariable(\"hasMenuItem\", jsonData.hasMenuItem.object);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true,
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/ld+json"
+									},
+									{
+										"key": "Link",
+										"type": "text",
+										"value": "<https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{gatewayServer}}/ngsi-ld/v1/entities/urn:ngsi-ld:Menu:01",
+									"host": [
+										"{{gatewayServer}}"
+									],
+									"path": [
+										"ngsi-ld",
+										"v1",
+										"entities",
+										"urn:ngsi-ld:Menu:01"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get A MenuItem of the Menu",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "da23935d-cada-472d-81b8-ab41c01d6f5b",
+										"exec": [
+											"postman.setEnvironmentVariable(\"name\");\r",
+											"postman.setEnvironmentVariable(\"section\");\r",
+											"postman.setEnvironmentVariable(\"suitableForDiet\");\r",
+											"var jsonData = JSON.parse(responseBody);\r",
+											"postman.setEnvironmentVariable(\"name\",jsonData.name.value);\r",
+											"postman.setEnvironmentVariable(\"section\", jsonData.section.value);\r",
+											"postman.setEnvironmentVariable(\"suitableForDiet\", jsonData.suitableForDiet.value);\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true,
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/ld+json"
+									},
+									{
+										"key": "Link",
+										"type": "text",
+										"value": "<https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{gatewayServer}}/ngsi-ld/v1/entities/{{hasMenuItem}}",
+									"host": [
+										"{{gatewayServer}}"
+									],
+									"path": [
+										"ngsi-ld",
+										"v1",
+										"entities",
+										"{{hasMenuItem}}"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "973d5b3c-2aa7-46c1-bb6c-583e3a0a5634",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "06b86d0f-294b-44d2-8aaf-ae023e5c04bf",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Get menuItems by Sections",
+					"item": [
+						{
+							"name": "Get MenuItems by Sections",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "1ad1cd06-f30e-4c20-bfbe-329c4f1ace65",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true,
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/ld+json"
+									},
+									{
+										"key": "Link",
+										"type": "text",
+										"value": "<https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{gatewayServer}}/ngsi-ld/v1/entities?q=section==appetizers&type=MenuItem",
+									"host": [
+										"{{gatewayServer}}"
+									],
+									"path": [
+										"ngsi-ld",
+										"v1",
+										"entities"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "section==appetizers"
+										},
+										{
+											"key": "type",
+											"value": "MenuItem"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "589bf345-522b-49dd-81f3-d91936ee641a",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "5a6d4cd1-99c0-4ad8-97f2-86f7bb4799f1",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Get the menu of a specific Date",
+					"item": [
+						{
+							"name": "Get All trashs of a Restaurant",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "f68ff294-83c8-4edb-b087-179a827602cd",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true,
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/ld+json"
+									},
+									{
+										"key": "Link",
+										"type": "text",
+										"value": "<https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{gatewayServer}}/ngsi-ld/v1/entities?q=refRestaurant==urn:ngsi-ld:Restaurant:02&type=Trash",
+									"host": [
+										"{{gatewayServer}}"
+									],
+									"path": [
+										"ngsi-ld",
+										"v1",
+										"entities"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "refRestaurant==urn:ngsi-ld:Restaurant:02"
+										},
+										{
+											"key": "type",
+											"value": "Trash"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "69bd330b-7230-41f2-9656-70d0a5e839fa",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "c3e50335-4e1f-4519-ad1b-9ec07ecc92ae",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Add an Attribute to an Entity",
+					"item": [
+						{
+							"name": "Add refRestaurant to the vegetable Trash",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/ld+json"
+									},
+									{
+										"key": "Link",
+										"type": "text",
+										"value": "<https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \"refRestaurant\": {\r\n        \"type\": \"Relationship\",\r\n        \"object\": \"urn:ngsi-ld:Restaurant:01\"\r\n    }}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{gatewayServer}}/ngsi-ld/v1/entities/urn:ngsi-ld:Trash:vegetable/attrs",
+									"host": [
+										"{{gatewayServer}}"
+									],
+									"path": [
+										"ngsi-ld",
+										"v1",
+										"entities",
+										"urn:ngsi-ld:Trash:vegetable",
+										"attrs"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add controlledAsset to an Device",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/ld+json"
+									},
+									{
+										"key": "Link",
+										"type": "text",
+										"value": "<https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \"controlledAsset\": {\r\n        \"type\": \"Relationship\",\r\n        \"object\": \"urn:ngsi-ld:Restaurant:01\"\r\n    }}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{gatewayServer}}/ngsi-ld/v1/entities/urn:ngsi-ld:Device:04/attrs",
+									"host": [
+										"{{gatewayServer}}"
+									],
+									"path": [
+										"ngsi-ld",
+										"v1",
+										"entities",
+										"urn:ngsi-ld:Device:04",
+										"attrs"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "ba68718b-8b11-4a34-a971-a82c0db71a7f",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "a2a493d8-394c-4dee-ae8e-6390acacf8a1",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Get All Devices installed in a Restaurant",
+					"item": [
+						{
+							"name": "Get All Devices installed in a Restaurant",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "7766f9d8-99c8-4b4b-98f5-2f189e06f32c",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true,
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/ld+json"
+									},
+									{
+										"key": "Link",
+										"type": "text",
+										"value": "<https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{gatewayServer}}/ngsi-ld/v1/entities?q=controlledAsset==urn:ngsi-ld:Restaurant:01&type=Device",
+									"host": [
+										"{{gatewayServer}}"
+									],
+									"path": [
+										"ngsi-ld",
+										"v1",
+										"entities"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "controlledAsset==urn:ngsi-ld:Restaurant:01"
+										},
+										{
+											"key": "type",
+											"value": "Device"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "512921b3-a876-4b7a-b471-3eeb45ac773a",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "e1a57ac5-5747-469d-a74b-8bbe721953ba",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Get All Trashs of  a Restaurant",
+					"item": [
+						{
+							"name": "Get All Trashs of  a Restaurant",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "6b6ffeae-5bd2-41a8-b982-afcf228b3c30",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true,
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/ld+json"
+									},
+									{
+										"key": "Link",
+										"type": "text",
+										"value": "<https://raw.githubusercontent.com/easy-global-market/ngsild-api-data-models/master/saint-quentin-contexts/ConnectedCanteens/connectedCanteens-compound.jsonld>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{gatewayServer}}/ngsi-ld/v1/entities?q=refRestaurant==urn:ngsi-ld:Restaurant:01&type=Trash",
+									"host": [
+										"{{gatewayServer}}"
+									],
+									"path": [
+										"ngsi-ld",
+										"v1",
+										"entities"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "refRestaurant==urn:ngsi-ld:Restaurant:01"
+										},
+										{
+											"key": "type",
+											"value": "Trash"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "3245e7a5-ada0-4c66-b533-c839a51261a1",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "025ef7fb-854b-4c07-b344-d644f2910f64",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "accessToken",
+				"value": "{{oauthToken}}",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "78971a24-a76e-488f-b813-7cebaf806845",
+				"type": "text/javascript",
+				"exec": [
+					"// Refresh the OAuth token if necessary",
+					"var tokenDate = new Date(2010,1,1);",
+					"var tokenTimestamp = pm.environment.get(\"oauthTimestamp\");",
+					"if(tokenTimestamp){",
+					"  tokenDate = Date.parse(tokenTimestamp);",
+					"}",
+					"var expiresInTime = pm.environment.get(\"expiresInTime\");",
+					"if(!expiresInTime){",
+					"    expiresInTime = 300000; // Set default expiration time to 5 minutes",
+					"}if((new Date() - tokenDate) >= expiresInTime) ",
+					"{",
+					"   pm.sendRequest({",
+					"      url:  pm.environment.get(\"authUrl\"), ",
+					"      method: 'POST',",
+					"      body: {",
+					"        mode: 'urlencoded',",
+					"        urlencoded: [",
+					"            { key: 'client_id', value: pm.environment.get(\"clientId\") },",
+					"            { key: 'client_secret', value: pm.environment.get(\"clientSecret\") },",
+					"            { key: 'grant_type', value: 'client_credentials' }",
+					"        ]",
+					"      },",
+					"      header: {",
+					"        'Accept': 'application/json',",
+					"        'Content-Type': 'application/x-www-form-urlencoded'",
+					"      }",
+					"  }, function (err, res) {",
+					"        pm.environment.set(\"oauthToken\", res.json().access_token);",
+					"        pm.environment.set(\"oauthTimestamp\", new Date());",
+					"        ",
+					"        // Set the ExpiresInTime variable to the time given in the response if it exists",
+					"        if(res.json().expires_in){",
+					"            expiresInTime = res.json().expires_in * 1000;",
+					"            pm.environment.set(\"expiresInTime\", expiresInTime);",
+					"        }",
+					"  });",
+					"}"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "d1c08937-464e-4905-a93b-fd5b73690678",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
