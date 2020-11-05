@@ -7,7 +7,7 @@
     },
     "controlledAsset": {
         "type": "Relationship",
-        "object": "urn:ngsi-ld:Trash:vegetable"
+        "object": "urn:ngsi-ld:Trash:plastic"
     },
     "dateInstalled": {
         "type": "Property",
