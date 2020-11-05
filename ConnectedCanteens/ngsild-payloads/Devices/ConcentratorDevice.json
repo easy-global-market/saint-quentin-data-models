@@ -1,0 +1,55 @@
+{
+    "id": "urn:ngsi-ld:Device:Concentrator01",
+    "type": "Device",
+    "dateInstalled": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2020-06-30T14:00:00Z"
+        }
+    },
+    "dateFirstUsed": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2020-06-30T14:00:00Z"
+        }
+    },
+    "dateLastValueReported": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2020-06-30T14:00:00Z"
+        }
+    },
+    "refDevice": [
+        {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Device:01",
+            "datasetId": "urn:ngsi-ld:Dataset:Device:01"
+        },
+        {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Device:02",
+            "datasetId": "urn:ngsi-ld:Dataset:Device:02"
+        },
+        {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Device:03",
+            "datasetId": "urn:ngsi-ld:Dataset:Device:03"
+        },
+        {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Device:04",
+            "datasetId": "urn:ngsi-ld:Dataset:Device:04"
+        },
+        {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Device:05",
+            "datasetId": "urn:ngsi-ld:Dataset:Device:05"
+        }
+    ],
+    "@context": [
+        "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/ConnectedCanteens/jsonld-contexts/connectedCanteens-compound.jsonld"
+    ]
+}
