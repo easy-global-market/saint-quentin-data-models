@@ -16,7 +16,7 @@
         "observedAt": "2020-06-30T14:30:00Z",
         "observedBy": {
             "type": "Relationship",
-            "object": "urn:ngsi-ld:Device:04"
+            "object": "urn:ngsi-ld:Device:Concentrator01"
         }
     },
     "@context": [

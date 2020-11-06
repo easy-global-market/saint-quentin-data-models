@@ -6,6 +6,7 @@
         "MenuItem": "https://schema.org/MenuItem",
         "Restaurant": "https://schema.org/Restaurant",
         "Trash": "https://www.saint-quentin.fr/ontology#Trash",
+        "Concentrator": "https://www.saint-quentin.fr/ontology#Concentrator",
 
         "audience": "https://www.saint-quentin.fr/ontology#audience",
         "checkedOn": "https://www.saint-quentin.fr/ontology#checkedOn",

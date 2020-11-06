@@ -1,0 +1,40 @@
+{
+    "id": "urn:ngsi-ld:Device:05",
+    "type": "Device",
+    "refDeviceModel": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:DeviceModel:01"
+    },
+    "controlledAsset": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Trash:plastic"
+    },
+    "dateInstalled": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2020-06-30T14:00:00Z"
+        }
+    },
+    "dateFirstUsed": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2020-06-30T14:00:00Z"
+        }
+    },
+    "dateLastValueReported": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2020-06-30T14:00:00Z"
+        }
+    },
+    "controlledProperty": {
+        "type": "Property",
+        "value": "weight"
+    },
+    "@context": [
+        "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/ConnectedCanteens/jsonld-contexts/connectedCanteens-compound.jsonld"
+    ]
+}
