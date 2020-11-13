@@ -5,13 +5,9 @@
         "type": "Property",
         "value": "Purée"
     },
-    "section": {
-        "type": "Property",
-        "value": "vegetables"
-    },
     "suitableForDiet":{
         "type":"Property",
-        "value": ["Vegetarian","Organic","NoPork"]
+        "value": ["Organic","NoPork"]
     },
     "@context": [
         "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/ConnectedCanteens/jsonld-contexts/connectedCanteens-compound.jsonld"

@@ -9,10 +9,74 @@
         "type": "Relationship",
         "object": "urn:ngsi-ld:City:01"
     },
-    "refAttendance": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:Attendance:01"
-    },
+    "countedAttendee": [
+        {
+            "type": "Property",
+            "value": 51,
+            "observedAt": "2020-06-30T14:30:00Z",
+            "observedBy": {
+                "type": "Relationship",
+                "object": "urn:ngsi-ld:Device:Concentrator01"
+            },
+            "datasetId": "urn:ngsi-ld:Dataset:Actual:Observed"
+        },
+        {
+            "type": "Property",
+            "value": 50,
+            "observedAt": "2020-06-30T14:00:00Z",
+            "audience": {
+                "type": "Property",
+                "value": "Maternelles"
+            },
+            "state": {
+                "type": "Property",
+                "value": "Registered"
+            },
+            "datasetId": "urn:ngsi-ld:Dataset:Registered:Maternelles"
+        },
+        {
+            "type": "Property",
+            "value": 50,
+            "observedAt": "2020-06-30T14:00:00Z",
+            "audience": {
+                "type": "Property",
+                "value": "Maternelles"
+            },
+            "state": {
+                "type": "Property",
+                "value": "Actual"
+            },
+            "datasetId": "urn:ngsi-ld:Dataset:Actual:Maternelles"
+        },
+        {
+            "type": "Property",
+            "value": 50,
+            "observedAt": "2020-06-30T14:00:00Z",
+            "audience": {
+                "type": "Property",
+                "value": "Primaires"
+            },
+            "state": {
+                "type": "Property",
+                "value": "Registered"
+            },
+            "datasetId": "urn:ngsi-ld:Dataset:Registered:Primaires"
+        },
+        {
+            "type": "Property",
+            "value": 50,
+            "observedAt": "2020-06-30T14:00:00Z",
+            "audience": {
+                "type": "Property",
+                "value": "Primaires"
+            },
+            "state": {
+                "type": "Property",
+                "value": "Actual"
+            },
+            "datasetId": "urn:ngsi-ld:Dataset:Actual:Primaires"
+        }
+    ],
     "@context": [
         "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/ConnectedCanteens/jsonld-contexts/connectedCanteens-compound.jsonld"
     ]

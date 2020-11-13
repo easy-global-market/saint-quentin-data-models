@@ -12,12 +12,20 @@
         {
             "type": "Relationship",
             "object": "urn:ngsi-ld:MenuItem:01",
-            "datasetId": "urn:ngsi-ld:Dataset:MenuItem:01"
+            "datasetId": "urn:ngsi-ld:Dataset:MenuItem:01",
+            "section":{
+                "type":"Property",
+                "value":"mainDish"
+            }
         },
         {
             "type": "Relationship",
             "object": "urn:ngsi-ld:MenuItem:02",
-            "datasetId": "urn:ngsi-ld:Dataset:MenuItem:02"
+            "datasetId": "urn:ngsi-ld:Dataset:MenuItem:02",
+            "section":{
+                "type":"Property",
+                "value":"sideDish"
+            }
         }
     ],
     "refCity": {
