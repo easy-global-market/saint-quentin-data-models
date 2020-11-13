@@ -1,6 +1,5 @@
 {
     "@context": {
-        "Attendance": "https://www.saint-quentin.fr/ontology#Attendance",
         "City": "https://schema.org/City",
         "Menu": "https://schema.org/Menu",
         "MenuItem": "https://schema.org/MenuItem",
@@ -10,8 +9,7 @@
 
         "audience": "https://www.saint-quentin.fr/ontology#audience",
         "checkedOn": "https://www.saint-quentin.fr/ontology#checkedOn",
-        "counted": "https://www.saint-quentin.fr/ontology#counted",
-        "countedByCategory": "https://www.saint-quentin.fr/ontology#countedByCategory",
+        "countedAttendee": "https://www.saint-quentin.fr/ontology#countedAttendee",
         "hasRestaurant": "https://www.saint-quentin.fr/ontology#hasRestaurant",
         "hasMenuItem": "https://schema.org/hasMenuItem",
         "refRestaurant": "https://www.saint-quentin.fr/ontology#refRestaurant",
