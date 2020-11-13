@@ -5,13 +5,9 @@
         "type": "Property",
         "value": "Duo chou bio à l'irlandaise"
     },
-    "section": {
-        "type": "Property",
-        "value": "appetizers"
-    },
     "suitableForDiet":{
         "type":"Property",
-        "value":["Vegetarian","Organic","NoPork"]
+        "value":["Organic","NoPork"]
     },
     "@context": [
         "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/ConnectedCanteens/jsonld-contexts/connectedCanteens-compound.jsonld"
