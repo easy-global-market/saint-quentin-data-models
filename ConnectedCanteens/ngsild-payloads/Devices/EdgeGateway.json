@@ -1,6 +1,6 @@
 {
-    "id": "urn:ngsi-ld:Device:Concentrator01",
-    "type": "Device",
+    "id": "urn:ngsi-ld:EdgeGateway:01",
+    "type": "EdgeGateway",
     "dateInstalled": {
         "type": "Property",
         "value": {
@@ -42,11 +42,6 @@
             "type": "Relationship",
             "object": "urn:ngsi-ld:Device:04",
             "datasetId": "urn:ngsi-ld:Dataset:Device:04"
-        },
-        {
-            "type": "Relationship",
-            "object": "urn:ngsi-ld:Device:05",
-            "datasetId": "urn:ngsi-ld:Dataset:Device:05"
         }
     ],
     "@context": [

@@ -4,8 +4,7 @@
         "Menu": "https://schema.org/Menu",
         "MenuItem": "https://schema.org/MenuItem",
         "Restaurant": "https://schema.org/Restaurant",
-        "Trash": "https://www.saint-quentin.fr/ontology#Trash",
-        "Concentrator": "https://www.saint-quentin.fr/ontology#Concentrator",
+        "EdgeGateway": "https://www.saint-quentin.fr/ontology#EdgeGateway",
 
         "audience": "https://www.saint-quentin.fr/ontology#audience",
         "checkedOn": "https://www.saint-quentin.fr/ontology#checkedOn",
@@ -13,12 +12,13 @@
         "hasRestaurant": "https://www.saint-quentin.fr/ontology#hasRestaurant",
         "hasMenuItem": "https://schema.org/hasMenuItem",
         "refRestaurant": "https://www.saint-quentin.fr/ontology#refRestaurant",
+        "wasteMeasurement": "https://www.saint-quentin.fr/ontology#wasteMeasurement",
         "servedOn": "https://www.saint-quentin.fr/ontology#servedOn",
         "refAttendance": "https://www.saint-quentin.fr/ontology#refAttendance",
         "refCity": "https://www.saint-quentin.fr/ontology#refCity",
         "section": "https://www.saint-quentin.fr/ontology#section",
         "suitableForDiet": "https://schema.org/suitableForDiet",
         "state": "https://www.saint-quentin.fr/ontology#state",
-        "trashType": "https://www.saint-quentin.fr/ontology#trashType"
+        "wasteType": "https://www.saint-quentin.fr/ontology#wasteType"
     }
 }

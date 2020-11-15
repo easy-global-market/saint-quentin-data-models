@@ -16,7 +16,7 @@
             "observedAt": "2020-06-30T14:30:00Z",
             "observedBy": {
                 "type": "Relationship",
-                "object": "urn:ngsi-ld:Device:Concentrator01"
+                "object": "urn:ngsi-ld:EdgeGateway:01"
             },
             "datasetId": "urn:ngsi-ld:Dataset:Actual:Observed"
         },
@@ -75,6 +75,53 @@
                 "value": "Actual"
             },
             "datasetId": "urn:ngsi-ld:Dataset:Actual:Primaires"
+        }
+    ],
+    "wasteMeasurement": [
+        {
+            "type": "Property",
+            "value": 25000,
+            "unitCode": "GRM",
+            "observedAt": "2020-06-30T14:00:00Z",
+            "datasetId": "urn:ngsi-ld:Dataset:WasteMeasurement:Vegetables",
+            "wasteType": {
+                "type": "Property",
+                "value": "Vegetables"
+            },
+            "observedBy": {
+                "type": "Relationship",
+                "object": "urn:ngsi-ld:EdgeGateway:01"
+            }
+        },
+        {
+            "type": "Property",
+            "value": 18000,
+            "unitCode": "GRM",
+            "observedAt": "2020-06-30T14:00:00Z",
+            "datasetId": "urn:ngsi-ld:Dataset:WasteMeasurement:Meat",
+            "wasteType": {
+                "type": "Property",
+                "value": "Meat"
+            },
+            "observedBy": {
+                "type": "Relationship",
+                "object": "urn:ngsi-ld:EdgeGateway:01"
+            }
+        },
+        {
+            "type": "Property",
+            "value": 1500,
+            "unitCode": "GRM",
+            "observedAt": "2020-06-30T14:00:00Z",
+            "datasetId": "urn:ngsi-ld:Dataset:WasteMeasurement:Plastic",
+            "wasteType": {
+                "type": "Property",
+                "value": "Plastic"
+            },
+            "observedBy": {
+                "type": "Relationship",
+                "object": "urn:ngsi-ld:EdgeGateway:01"
+            }
         }
     ],
     "@context": [

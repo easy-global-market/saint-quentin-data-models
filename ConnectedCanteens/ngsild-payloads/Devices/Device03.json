@@ -6,8 +6,8 @@
         "object": "urn:ngsi-ld:DeviceModel:01"
     },
     "controlledAsset": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:Trash:meat"
+        "type": "Property",
+        "value": "Meat"
     },
     "dateInstalled": {
         "type": "Property",

@@ -6,8 +6,8 @@
         "object": "urn:ngsi-ld:DeviceModel:01"
     },
     "controlledAsset": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:Trash:vegetable"
+        "type": "Property",
+        "value": "Plastic"
     },
     "dateInstalled": {
         "type": "Property",
