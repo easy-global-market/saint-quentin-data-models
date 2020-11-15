@@ -18,6 +18,14 @@
                 "type": "Relationship",
                 "object": "urn:ngsi-ld:EdgeGateway:01"
             },
+            "audience": {
+                "type": "Property",
+                "value": "All"
+            },
+            "state": {
+                "type": "Property",
+                "value": "Measured"
+            },
             "datasetId": "urn:ngsi-ld:Dataset:Actual:Observed"
         },
         {

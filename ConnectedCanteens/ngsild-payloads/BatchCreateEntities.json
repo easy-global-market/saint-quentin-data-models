@@ -76,8 +76,8 @@
             "object": "urn:ngsi-ld:DeviceModel:01"
         },
         "controlledAsset": {
-            "type": "Property",
-            "value": "Vegetables"
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Restaurant:01"
         },
         "dateInstalled": {
             "type": "Property",
@@ -116,8 +116,8 @@
             "object": "urn:ngsi-ld:DeviceModel:01"
         },
         "controlledAsset": {
-            "type": "Property",
-            "value": "Meat"
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Restaurant:01"
         },
         "dateInstalled": {
             "type": "Property",
@@ -156,8 +156,8 @@
             "object": "urn:ngsi-ld:DeviceModel:01"
         },
         "controlledAsset": {
-            "type": "Property",
-            "value": "Plastic"
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Restaurant:01"
         },
         "dateInstalled": {
             "type": "Property",
