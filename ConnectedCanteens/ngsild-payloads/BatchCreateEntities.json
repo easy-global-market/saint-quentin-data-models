@@ -355,7 +355,6 @@
                     "object": "urn:ngsi-ld:EdgeGateway:01"
                 }
             }
-
         ],
         "@context": [
             "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/ConnectedCanteens/jsonld-contexts/connectedCanteens-compound.jsonld"
