@@ -7,7 +7,7 @@
     },
     "controlledAsset": {
         "type": "Relationship",
-        "object": "urn:ngsi-ld:Trash:bread"
+        "object": "urn:ngsi-ld:Restaurant:01"
     },
     "dateInstalled": {
         "type": "Property",
