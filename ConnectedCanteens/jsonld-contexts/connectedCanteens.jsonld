@@ -20,6 +20,5 @@
         "suitableForDiet": "https://schema.org/suitableForDiet",
         "state": "https://www.saint-quentin.fr/ontology#state",
         "wasteType": "https://www.saint-quentin.fr/ontology#wasteType"
-        "isAlive": "https://www.saint-quentin.fr/ontology#isAlive"
     }
 }
