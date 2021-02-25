@@ -25,7 +25,10 @@
     },
     "lastPlantedAt": {
         "type": "Property",
-        "value": "2020-06-26T21:32:52+02:00"
+        "value": {
+            "@type": "DateTime",
+            "@value": "2020-06-26T21:32:52+02:00"
+        }
     },
     "length": {
         "type": "Property",

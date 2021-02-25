@@ -6,14 +6,15 @@ This repository contains an harmonised NGSI-LD description of the Smart Irrigati
 
 -   [Stadium](ngsild-payloads/Stadium.json)
 
--   [Devices]and [Device Models]
+-   [Devices] and [Device Models]
 	- [Sprinkler Devices](ngsild-payloads/SprinklerDevices)
 	- [Soil Devices](ngsild-payloads/SoilDevices)
-	- [LawnMower Devices](ngsild-payloads/LawnMowerDevices)
-	- [NodeController Devices](ngsild-payloads/NodeController)
+	- [LawnMower Devices](ngsild-payloads/LawnMowerDevices)c
+
+-   [Field Operation] and [Field Operation Detail]
+	- [Field Operation](ngsild-payloads/FO-FOD/FO.json)
+	- [Field Operation Detail](ngsild-payloads/FO-FOD/FOD1.json)
 
 -   [Valve](ngsild-payloads//Valves)
 
 -   [Field](ngsild-payloads/Field.json)
-
--   [SubField](ngsild-payloads/SubField.json)

@@ -1,10 +1,6 @@
 {
     "id": "urn:ngsi-ld:Device:SoilSensor01",
     "type": "Device",
-    "controlledAssest": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:SubField:01"
-    },
     "refDeviceModel": {
         "type": "Relationship",
         "object": "urn:ngsi-ld:DeviceModel:SoilSensor01"
@@ -21,11 +17,17 @@
     },
     "dateInstalled": {
         "type": "Property",
-        "value": "2020-06-30T11:00:00Z"
+        "value": {
+            "@type": "DateTime",
+            "@value": "2020-06-26T21:32:52+02:00"
+        }
     },
     "dateLastCalibration": {
         "type": "Property",
-        "value": "2020-06-30T11:00:00Z"
+        "value": {
+            "@type": "DateTime",
+            "@value": "2020-06-26T21:32:52+02:00"
+        }
     },
     "relativePosition": {
         "type": "Property",

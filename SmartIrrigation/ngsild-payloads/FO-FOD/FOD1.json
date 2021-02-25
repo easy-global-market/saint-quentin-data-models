@@ -7,15 +7,15 @@
         "startAt": {
             "type": "Property",
             "value": {
-                "type": "DateTime",
-                "value": "2020-03-29T14:00:00+02:00"
+                "@type": "DateTime",
+                "@value": "2020-03-29T14:00:00+02:00"
             }
         },
         "endAt": {
             "type": "Property",
             "value": {
-                "type": "DateTime",
-                "value": "2020-03-29T14:00:00+02:00"
+                "@type": "DateTime",
+                "@value": "2020-03-29T14:00:00+02:00"
             }
         }
     },
