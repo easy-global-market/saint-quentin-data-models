@@ -9,12 +9,6 @@
         "type": "Relationship",
         "object": "urn:ngsi-ld:DeviceModel:WaterController01"
     },
-    "controlledProperty": {
-        "type": "Property",
-        "value": [
-            "dissolvedOxygen"
-        ]
-    },
     "serialNumber": {
         "type": "Property",
         "value": "TTG58-HHH"
