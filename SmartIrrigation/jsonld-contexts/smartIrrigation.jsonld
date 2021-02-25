@@ -1,21 +1,24 @@
 {
     "@context": {
         "City": "https://www.saint-quentin.fr/ontology#City",
-        "Field": "https://www.saint-quentin.fr/ontology#Agri-Parcel",
+        "Field": "https://www.saint-quentin.fr/ontology#Field",
+        "FieldOperation": "https://www.saint-quentin.fr/ontology#FieldOperation",
+        "FieldOperationDetail": "https://www.saint-quentin.fr/ontology#FieldOperationDetail",
         "Stadium": "https://www.saint-quentin.fr/ontology#Stadium",
         
-        "address": "https://www.saint-quentin.fr/ontology#address",
+        "activity": "https://www.saint-quentin.fr/ontology#activity",
+        "booker": "https://www.saint-quentin.fr/ontology#booker",
         "category": "https://www.saint-quentin.fr/ontology#category",
-        "status": "https://www.saint-quentin.fr/ontology#cropstatus",
+        "duration": "https://www.saint-quentin.fr/ontology#duration",
+        "equipmentType": "https://www.saint-quentin.fr/ontology#equipmentType",
+        "hasControlNode": "https://www.saint-quentin.fr/ontology#hasControlNode",
+        "hasStadium": "https://www.saint-quentin.fr/ontology#hasStadium",
         "hasWateringController": "https://www.saint-quentin.fr/ontology#hasWateringController",
-        "lastPlantedAt": "https://www.saint-quentin.fr/ontology#lastplantedat",
-        "length": "https://www.saint-quentin.fr/ontology#length",
-        "logo": "https://www.saint-quentin.fr/ontology#logo",
-        "url": "https://www.saint-quentin.fr/ontology#url",
+        "lastPlantedAt": "https://www.saint-quentin.fr/ontology#lastPlantedAt",
         "refField": "https://www.saint-quentin.fr/ontology#refField",
         "refStadium": "https://www.saint-quentin.fr/ontology#refStadium",
         "refCity": "https://www.saint-quentin.fr/ontology#refStadium",
-        "telephone": "https://www.saint-quentin.fr/ontology#telephone",
-        "width": "https://www.saint-quentin.fr/ontology#width"
+        "refWateringController": "https://www.saint-quentin.fr/ontology#refWateringController",
+        "refFieldOperationDetail": "https://www.saint-quentin.fr/ontology#refFieldOperationDetail"
     }
 }

@@ -1,0 +1,49 @@
+{
+    "id": "urn:ngsi-ld:FieldOperation:FieldOperationA01",
+    "type": "FieldOperation",
+    "refWateringController":{
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Device:WaterController01"
+    },
+    "refField":{
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Field:01"
+    },
+    "status":{
+        "type": "Property",
+        "value": "scheduled",
+		"observedAt": "2020-06-26T12:32:52+02:00"
+    },
+    "refFieldOperationDetail": [
+        {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:FieldOperationDetails:01",
+            "order": {
+                "type": "Property",
+                "value": 1
+            },
+            "datasetId": "urn:ngsi-ld:Dataset:fieldOperation01"
+        },
+        {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:FieldOperationDetails:02",
+            "order": {
+                "type": "Property",
+                "value": 2
+            },
+            "datasetId": "urn:ngsi-ld:Dataset:fieldOperation02"
+        },
+        {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:FieldOperationDetails:03",
+            "order": {
+                "type": "Property",
+                "value": 3
+            },
+            "datasetId": "urn:ngsi-ld:Dataset:fieldOperation03"
+        }
+    ],
+    "@context": [
+        "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/SmartIrrigation/jsonld-contexts/smartIrrigation-compound.jsonld?token=AL5LEUQ4K76LKNIJZNLUHUK7OICPC"
+    ]
+}

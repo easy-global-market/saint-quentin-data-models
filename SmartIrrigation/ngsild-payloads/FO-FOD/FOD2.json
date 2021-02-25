@@ -1,0 +1,25 @@
+{
+    "id": "urn:ngsi-ld:FieldOperationDetail:02",
+    "type": "FieldOperationDetail",
+    "hasControlNode": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Device:Sprinklers:01",
+        "startAt": {
+            "type": "Property",
+            "value": {
+                "type": "DateTime",
+                "value": "2020-03-29T14:00:00+02:00"
+            }
+        },
+        "endAt": {
+            "type": "Property",
+            "value": {
+                "type": "DateTime",
+                "value": "2020-03-29T14:00:00+02:00"
+            }
+        }
+    },
+    "@context": [
+        "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/SmartIrrigation/jsonld-contexts/smartIrrigation-compound.jsonld?token=AL5LEUQ4K76LKNIJZNLUHUK7OICPC"
+    ]
+}
