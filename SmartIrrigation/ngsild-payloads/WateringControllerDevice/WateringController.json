@@ -15,11 +15,17 @@
     },
     "dateInstalled": {
         "type": "Property",
-        "value": "2020-06-30T11:00:00Z"
+        "value": {
+            "@type": "DateTime",
+            "@value": "2020-06-26T21:32:52+02:00"
+        }
     },
     "dateLastCalibration": {
         "type": "Property",
-        "value": "2020-06-30T11:00:00Z"
+        "value": {
+            "@type": "DateTime",
+            "@value": "2020-06-26T21:32:52+02:00"
+        }
     },
     "@context": [
         "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/SmartIrrigation/jsonld-contexts/smartIrrigation-compound.jsonld?token=AL5LEUQ4K76LKNIJZNLUHUK7OICPC"
