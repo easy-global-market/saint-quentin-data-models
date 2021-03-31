@@ -17,7 +17,7 @@
         "lastPlantedAt": "https://www.saint-quentin.fr/ontology#lastPlantedAt",
         "refField": "https://www.saint-quentin.fr/ontology#refField",
         "refStadium": "https://www.saint-quentin.fr/ontology#refStadium",
-        "refCity": "https://www.saint-quentin.fr/ontology#refStadium",
+        "refCity": "https://www.saint-quentin.fr/ontology#refCity",
         "refWateringController": "https://www.saint-quentin.fr/ontology#refWateringController",
         "refFieldOperationDetail": "https://www.saint-quentin.fr/ontology#refFieldOperationDetail"
     }
