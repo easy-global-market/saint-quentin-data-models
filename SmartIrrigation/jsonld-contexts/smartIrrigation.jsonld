@@ -1,6 +1,6 @@
 {
     "@context": {
-        "City": "https://www.saint-quentin.fr/ontology#City",
+        "City": "https://schema.org/City",
         "Field": "https://www.saint-quentin.fr/ontology#Field",
         "FieldOperation": "https://www.saint-quentin.fr/ontology#FieldOperation",
         "FieldOperationDetail": "https://www.saint-quentin.fr/ontology#FieldOperationDetail",
