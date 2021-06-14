@@ -109,6 +109,7 @@
         "WaterValve": "https://www.saint-quentin.fr/ontology#WaterValve",
         "WaterValveModel": "https://www.saint-quentin.fr/ontology#WaterValveModel",
         "width": "https://schema.org/width",
+        "zone": "https://www.saint-quentin.fr/ontology#zone",
         "Alert": "https://www.saint-quentin.fr/ontology#Alert",
         "Anomaly": "https://www.saint-quentin.fr/ontology#Anomaly",
         "anomalousProperty": "https://www.saint-quentin.fr/ontology#anomalousProperty",
