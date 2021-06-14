@@ -1,0 +1,28 @@
+{
+   "id":"urn:ngsi-ld:Anomaly:01",
+   "type":"Anomaly",
+   "description":{
+      "type":"Property",
+      "value":"Anomaly description"
+   },
+   "anomalousProperty":{
+      "type":"Property",
+      "value":"Pressure"
+   },
+   "thresholdBreach":{
+      "type":"Property",
+      "value":12.8,
+      "observedAt":"2021-01-15T10:30:00Z",
+      "thresholdType":{
+         "type":"Property",
+         "value":"LOWER"
+      },
+      "thresholdValue":{
+         "type":"Property",
+         "value":15.0
+      }
+   },
+   "@context":[
+      "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/SmartIrrigation/jsonld-contexts/smartIrrigation-compound.jsonld"
+   ]
+}

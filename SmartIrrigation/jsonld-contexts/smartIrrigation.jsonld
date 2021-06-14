@@ -109,6 +109,14 @@
         "WaterValve": "https://www.saint-quentin.fr/ontology#WaterValve",
         "WaterValveModel": "https://www.saint-quentin.fr/ontology#WaterValveModel",
         "width": "https://schema.org/width",
-        "zone": "https://www.saint-quentin.fr/ontology#zone"
+        "Alert": "https://www.saint-quentin.fr/ontology#Alert",
+        "Anomaly": "https://www.saint-quentin.fr/ontology#Anomaly",
+        "anomalousProperty": "https://www.saint-quentin.fr/ontology#anomalousProperty",
+        "thresholdBreach": "https://www.saint-quentin.fr/ontology#thresholdBreach",
+        "thresholdType": "https://www.saint-quentin.fr/ontology#thresholdType",
+        "thresholdValue": "https://www.saint-quentin.fr/ontology#thresholdValue",
+        "category": "https://www.saint-quentin.fr/ontology#category",
+        "validFrom": "https://www.saint-quentin.fr/ontology#validFrom",
+        "validTo": "https://www.saint-quentin.fr/ontology#validTo"
     }
 }
