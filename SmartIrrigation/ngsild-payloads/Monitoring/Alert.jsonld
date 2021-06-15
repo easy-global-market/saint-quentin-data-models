@@ -1,0 +1,24 @@
+{
+  "id":"urn:ngsi-ld:Alert:01",
+  "type":"Alert",
+  "description":{
+    "type":"Property",
+    "value":"Alert description"
+  },
+  "status":{
+    "type":"Property",
+    "value":0,
+    "observedAt":"2021-01-14T15:30:00Z",
+    "validFrom":{
+      "type":"Property",
+      "value":"2021-01-14T15:30:00Z"
+    },
+    "category":{
+      "type":"Property",
+      "value":"No data"
+    }
+  },
+  "@context":[
+    "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/SmartIrrigation/jsonld-contexts/smartIrrigation-compound.jsonld"
+  ]
+}
