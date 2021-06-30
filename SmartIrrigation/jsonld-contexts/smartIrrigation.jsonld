@@ -84,6 +84,7 @@
         "relativeHumidity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relativehumidity",
         "relativePosition": "https://www.saint-quentin.fr/ontology#relativePosition",
         "reportedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/reportedat",
+        "Reservation": "https://www.saint-quentin.fr/ontology#Reservation",
         "reservationType": "https://www.saint-quentin.fr/ontology#reservationType",
         "result": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/result",
         "sequence": "https://www.saint-quentin.fr/ontology#sequence",
