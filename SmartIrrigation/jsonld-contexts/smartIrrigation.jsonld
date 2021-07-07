@@ -68,6 +68,7 @@
         "operationType": "https://uri.fiware.org/ns/data-models#operationType",
         "owner": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/owner",
         "petAdjustment": "https://www.saint-quentin.fr/ontology#petAdjustment",
+        "phone": "https://uri.fiware.org/ns/data-models#phone",
         "plannedActivation": "https://www.saint-quentin.fr/ontology#plannedActivation",
         "plannedEndAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedendat",
         "plannedStartAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedstartat",
