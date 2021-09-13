@@ -3,10 +3,11 @@
         "Alert": "https://www.saint-quentin.fr/ontology#Alert",
         "Anomaly": "https://www.saint-quentin.fr/ontology#Anomaly",
         "anomalousProperty": "https://www.saint-quentin.fr/ontology#anomalousProperty",
+        "category": "https://www.saint-quentin.fr/ontology#category",
+        "minValueThreshold": "https://www.saint-quentin.fr/ontology#minValueThreshold",
         "thresholdBreach": "https://www.saint-quentin.fr/ontology#thresholdBreach",
         "thresholdType": "https://www.saint-quentin.fr/ontology#thresholdType",
         "thresholdValue": "https://www.saint-quentin.fr/ontology#thresholdValue",
-        "category": "https://www.saint-quentin.fr/ontology#category",
         "validFrom": "https://www.saint-quentin.fr/ontology#validFrom",
         "validTo": "https://www.saint-quentin.fr/ontology#validTo"
     }
