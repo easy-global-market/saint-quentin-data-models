@@ -8,6 +8,7 @@
         "thresholdBreach": "https://www.saint-quentin.fr/ontology#thresholdBreach",
         "thresholdType": "https://www.saint-quentin.fr/ontology#thresholdType",
         "thresholdValue": "https://www.saint-quentin.fr/ontology#thresholdValue",
+        "raisedBy": "https://www.saint-quentin.fr/ontology#raisedBy",
         "validFrom": "https://www.saint-quentin.fr/ontology#validFrom",
         "validTo": "https://www.saint-quentin.fr/ontology#validTo"
     }
