@@ -104,6 +104,7 @@
         "status": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/status",
         "stoppedAt": "https://www.saint-quentin.fr/ontology#stoppedAt",
         "supplierName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/suppliername",
+        "timezone": "https://uri.fiware.org/ns/data-models#timezone",
         "url": "https://schema.org/url",
         "WateringController": "https://www.saint-quentin.fr/ontology#WateringController",
         "WateringControllerModel": "https://www.saint-quentin.fr/ontology#WateringControllerModel",
