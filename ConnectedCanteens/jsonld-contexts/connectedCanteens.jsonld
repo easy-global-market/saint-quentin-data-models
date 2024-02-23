@@ -11,6 +11,7 @@
         "countedAttendee": "https://www.saint-quentin.fr/ontology#countedAttendee",
         "hasRestaurant": "https://www.saint-quentin.fr/ontology#hasRestaurant",
         "hasMenuItem": "https://schema.org/hasMenuItem",
+        "name": "https://schema.org/name",
         "refRestaurant": "https://www.saint-quentin.fr/ontology#refRestaurant",
         "wasteMeasurement": "https://www.saint-quentin.fr/ontology#wasteMeasurement",
         "servedOn": "https://www.saint-quentin.fr/ontology#servedOn",
