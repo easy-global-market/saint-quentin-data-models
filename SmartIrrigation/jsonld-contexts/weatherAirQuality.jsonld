@@ -46,7 +46,6 @@
         "salinity": "https://uri.fiware.org/ns/data-models#salinity",
         "seaLevel": "https://uri.fiware.org/ns/data-models#seaLevel",
         "silicate": "https://uri.fiware.org/ns/data-models#silicate",
-        "soilMoistureVwc": "https://uri.fiware.org/ns/data-models#soilMoistureVwc",
         "soilTemperature": "https://uri.fiware.org/ns/data-models#soilTemperature",
         "state": "https://uri.fiware.org/ns/data-models#state",
         "stationCode": "https://uri.fiware.org/ns/data-models#stationCode",
