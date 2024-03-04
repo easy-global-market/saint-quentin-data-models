@@ -2,6 +2,6 @@
     "id": "urn:ngsi-ld:DeviceModel:01",
     "type": "DeviceModel",
     "@context": [
-        "https://raw.githubusercontent.com/easy-global-market/saint-quentin-data-models/master/ConnectedCanteens/jsonld-contexts/connectedCanteens-compound.jsonld"
+        "https://easy-global-market.github.io/saint-quentin-data-models/ConnectedCanteens/jsonld-contexts/connectedCanteens-compound.jsonld"
     ]
 }
