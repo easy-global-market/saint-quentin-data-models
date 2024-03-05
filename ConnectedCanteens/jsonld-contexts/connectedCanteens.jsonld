@@ -9,10 +9,14 @@
         "audience": "https://www.saint-quentin.fr/ontology#audience",
         "checkedOn": "https://www.saint-quentin.fr/ontology#checkedOn",
         "countedAttendee": "https://www.saint-quentin.fr/ontology#countedAttendee",
+        "dateFirstUsed": "https://uri.fiware.org/ns/data-models#dateFirstUsed",
+        "dateInstalled": "https://uri.fiware.org/ns/data-models#dateInstalled",
+        "dateLastValueReported": "https://uri.fiware.org/ns/data-models#dateLastValueReported",
         "hasRestaurant": "https://www.saint-quentin.fr/ontology#hasRestaurant",
         "hasMenuItem": "https://schema.org/hasMenuItem",
         "name": "https://schema.org/name",
         "refRestaurant": "https://www.saint-quentin.fr/ontology#refRestaurant",
+        "refDevice": "https://uri.fiware.org/ns/data-models#refDevice",
         "wasteMeasurement": "https://www.saint-quentin.fr/ontology#wasteMeasurement",
         "servedOn": "https://www.saint-quentin.fr/ontology#servedOn",
         "refAttendance": "https://www.saint-quentin.fr/ontology#refAttendance",
@@ -20,6 +24,7 @@
         "section": "https://www.saint-quentin.fr/ontology#section",
         "suitableForDiet": "https://schema.org/suitableForDiet",
         "state": "https://www.saint-quentin.fr/ontology#state",
+        "url": "https://schema.org/url",
         "wasteType": "https://www.saint-quentin.fr/ontology#wasteType"
     }
 }
